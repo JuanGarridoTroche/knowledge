@@ -1,0 +1,55 @@
+:root{
+  --fuente-logo: 'Michroma', sans-serif;
+  --fuente-menu: 'Nanum Myeongjo', serif;
+  --color-menu: rgb(0, 0, 0);
+}
+
+body{
+  font-family: var(--fuente-menu);
+  margin: 0; /* Así pegamos el header al body sin que haya espacios*/
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px; /* Si colocamos "height" en vez de min-height, al ver la web desde un dispositivo que tenga una pantalla menor a 700px se verá el menú con fondo blanco y no queremos eso*/
+  background-color: rgb(243, 199, 89) ;
+}
+
+header nav a{
+  text-decoration: none;
+  color: var(--color-menu);
+  font-weight: 700;
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+
+header nav a:hover{
+  color: white;
+  transition: all .5s;
+}
+
+.logo > h2{
+  font-family: var(--fuente-logo);
+}
+
+.logo{
+  display: flex;
+  align-items: center; /* alinea al centro el logo y el nombre de la Compañía*/
+}
+
+.logo img{
+  height: 50px;
+  margin-right: 10px; /* Separamos el logo del nombre de la compañía 10px del margen derecho*/
+}
+
+/* Vamos a realizar nuestra página resonsive para aquellas pantallas menores de 700px */
+@media (max-width: 700px){
+  header{
+    flex-direction: column;
+  }   
+  nav{
+    padding: 10px 0px;
+  } 
+}
