@@ -15,26 +15,32 @@ body {
   margin:0;
 }
 
-body .bg-portada {
-  backdrop-filter: blur(7px);
+.bg-portada{
+ 
   transition: all .5s;
+  background-image: url(../img/bg-portada.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/bg-portada.jpg);
+  background-blend-mode: darken;
 }
 
-.titulo, h2{
+h1.titulo{
   font-family: 'Nunito', sans-serif;
-  color: white;  
+  color: white; 
+  font-size: 4rem;
+}
+
+h2.titulo{
+  font-family: 'Nunito', sans-serif;
+  color: white; 
+  font-size: 2rem;
 }
 
 .text {
   text-transform: uppercase;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .logo {
@@ -102,40 +108,41 @@ body .bg-portada {
   transition-delay: 0.4s;
 }
 
-.close-btn {
+.close-btn{
   opacity: 0.3;
   position: absolute;
   top: 10px;
   left: 340px;
 }
 
-.list {
+.list{
   list-style-type: none;
   padding: 0;
 }
 
-.list li {
+.list li{
   margin: 20px 0;
 }
 
-.list li a {
+.list li a{
   color: rgb(34, 31, 31);
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.list ul {
+.list ul{
   list-style-type: none;
   padding-right: 20px;
 }
 
-.list li a:nth-child(even):hover{
-  color: rgb(122,171,149);
-}
 
 .list li a:nth-child(odd):hover{
-  color: blue;
+  color: rgb(226,223,171);
+  font-weight: bold;  
 }
+
+
+
 
 
