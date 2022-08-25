@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: rgb(196,155,74);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.bg-portada{
+  backdrop-filter: blur(5px);
+  transition: all .5s;
+  background-image: url(../img/bg-portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+
+.titulo, h2{
+  font-family: 'Nunito', sans-serif;
+  color: white;  
+}
+
+.text {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(7%);
+}
+
+.nav-soft-green {
+  background-color: rgb(122,171,149);
+  width: 60%;
+  max-width: 480px;
+  min-width: 20px;
+  transition-delay: 0.4s;
+}
+
+.nav-soft-green.visible {
+  transition-delay: 0s;
+}
+
+.nav-light-grayish-yellow {
+  background-color: rgb(226,223,171);
+  width: 100%;
+  transition-delay: 0.2s;
+}
+
+.nav-light-grayish-yellow.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-dull-orange {
+  background-color: rgb(196,155,74);
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-dull-orange.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  left: 350px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: rgb(34, 31, 31);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-right: 20px;
+}
