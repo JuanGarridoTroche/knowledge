@@ -12,16 +12,18 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin:0;
 }
 
-.bg-portada{
-  backdrop-filter: blur(5px);
+/* .bg-portada {
+  backdrop-filter: blur(7px);
   transition: all .5s;
-  background-image: url(../img/bg-portada.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;  
-}
+  background-size: cover; 
+  height: 100%;
+  width: 100%;
+} */
 
 .titulo, h2{
   font-family: 'Nunito', sans-serif;
@@ -102,8 +104,8 @@ body {
 .close-btn {
   opacity: 0.3;
   position: absolute;
-  top: 40px;
-  left: 350px;
+  top: 10px;
+  left: 340px;
 }
 
 .list {
@@ -126,3 +128,13 @@ body {
   list-style-type: none;
   padding-right: 20px;
 }
+
+.list li a:nth-child(even):hover{
+  color: rgb(122,171,149);
+}
+
+.list li a:nth-child(odd):hover{
+  color: blue;
+}
+
+
