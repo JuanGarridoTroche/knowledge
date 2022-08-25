@@ -15,7 +15,7 @@ body {
   margin:0;
 }
 
-/* .bg-portada {
+body .bg-portada {
   backdrop-filter: blur(7px);
   transition: all .5s;
   background-repeat: no-repeat;
@@ -23,7 +23,8 @@ body {
   background-size: cover; 
   height: 100%;
   width: 100%;
-} */
+  background-image: url(../img/bg-portada.jpg);
+}
 
 .titulo, h2{
   font-family: 'Nunito', sans-serif;
