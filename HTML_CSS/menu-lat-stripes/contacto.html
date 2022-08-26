@@ -25,34 +25,34 @@
 
     <!-- FORMULARIO DE CONTACTO-->
     <div class="contenido">
-      <h1 class="logo-contacto">CONTRATA A MIXING MARTINES</h1>
+      <h1 class="logo-contacto">CONTRATACIONES</h1>
       <div class="contenedor-contacto">
         <div class="formulario-contacto">
           <h3>Contáctanos</h3>
           <form action="">
             <p>
-              <label for="nombre-completo">Nombre completo</label>
-              <input type="text" name="nombre-completo" id="nombre-completo">
+              <label for="nombre-completo">Nombre completo <span>*</span></label>
+              <input type="text" name="nombre-completo" id="nombre-completo" required>
             </p>
             <p>
-              <label>Dirección de correo electrónico</label>
-              <input type="email" name="email">
+              <label>Correo electrónico <span>*</span></label>
+              <input type="email" name="email" required>
             </p>
             <p>
-              <label for="phone">Enter your phone number:</label>
-              <input type="tel" name="telefono" pattern="[6-9]-[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
-              <small>Format: 623 456 7890</small>
+              <label for="phone">Número de contacto: <span>*</span></label>
+              <input type="tel" name="telefono" pattern="[6-9][0-9]{8}" required>
+              <small>Formato: 654321098</small>
             </p>
             <p>
               <label>Asunto</label>
               <input type="text" name="asunto">
             </p>
-            <p>
+            <p class="bloque">
               <label>Mensaje</label>
               <textarea name="mensaje" rows="3"></textarea>
             </p>
-            <p>
-              <button type="submit">
+            <p class="bloque">
+              <button type="submit" class="btn contactar">
                 Enviar
               </button>
             </p>
@@ -62,9 +62,9 @@
         <div class="info-contacto">
           <h4>Más información</h4>
           <ul>
-            <li><i class="fa-solid fa-location-dot"></i> Rúa del percebe 13, 15011 A Coruña</li>
+            <li><i class="fa-solid fa-location-dot"></i> Rúa del percebe 13, 15011 A Coruña</li>            
             <li><i class="fa-solid fa-phone-flip"></i> 555 444 333</li>
-            <li><i class="fa-solid fa-envelope"></i> mixing-martines@mixing-martines.com</li>
+            <li><i class="fa-solid fa-envelope"></i> contacto@mixing-martines.com</li>
             <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, sed laboriosam ut deserunt aliquam obcaecati praesentium aut? Numquam harum eos repudiandae, eaque aliquid labore! Sapiente dignissimos omnis laboriosam sit explicabo!</p></li>
             <li><p>Mixing Martines</p></li>
           </ul>
@@ -95,5 +95,14 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      const $form = document.querySelector('#form');
+      $form.addEventListener('submit', handleSubmit);
+      function handleSubmit(event){
+        event.preventDefault();
+        const form = new FormData(this);
+        console.log(form.get('name'));
+      }
+    </script>
   </body>
 </html>
