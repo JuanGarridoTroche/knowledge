@@ -101,7 +101,7 @@
       function handleSubmit(event){
         event.preventDefault();
         const form = new FormData(this);
-        $buttonMailto.setAttibute('href',`mailto:juan@darthvader.es?subject=${form.get('nombre-completo')}${form.get('email')}&{body=});
+        // $buttonMailto.setAttibute('href',`mailto:juan@darthvader.es?subject=${form.get('nombre-completo')}${form.get('email')}&{body=});
         console.log(form.get('name'));
       }
     </script>
