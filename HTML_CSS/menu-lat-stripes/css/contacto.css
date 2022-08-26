@@ -95,9 +95,9 @@ contenedor-contacto > *{
   padding: .3em;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 950px) {
     body{
-      padding 0 4rem;
+      padding: 0 4rem;
     }
     .contenedor-contacto{
       display: grid;

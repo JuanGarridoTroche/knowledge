@@ -29,14 +29,14 @@
       <div class="contenedor-contacto">
         <div class="formulario-contacto">
           <h3>Contáctanos</h3>
-          <form action="">
+          <form action="" id="form">
             <p>
               <label for="nombre-completo">Nombre completo <span>*</span></label>
               <input type="text" name="nombre-completo" id="nombre-completo" required>
             </p>
             <p>
               <label>Correo electrónico <span>*</span></label>
-              <input type="email" name="email" required>
+              <input type="email" name="email" id="email" required>
             </p>
             <p>
               <label for="phone">Número de contacto: <span>*</span></label>
@@ -101,6 +101,7 @@
       function handleSubmit(event){
         event.preventDefault();
         const form = new FormData(this);
+        $buttonMailto.setAttibute('href',`mailto:juan@darthvader.es?subject=${form.get('nombre-completo')}${form.get('email')}&{body=});
         console.log(form.get('name'));
       }
     </script>
