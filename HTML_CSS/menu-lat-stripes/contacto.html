@@ -7,17 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
     <title>Mixing Martines</title>
   </head>
-  <body class="bg-portada">
+  <body class="bg-contacto">
     <button class="nav-btn open-btn">
       <i class="fas fa-bars"></i>
     </button>
 
-    <h1 class="titulo">MIXING MARTINES</h1>
+    
 
-    <p class="text">Vital landscape</p>
+    <!-- FORMULARIO DE CONTACTO-->
+    <div class="content">
+      <h1 class="logo-contacto">CONTRATA A MIXING MARTINES</h1>
+      <div class="contenedor-contacto">
+        <div class="formulario-contacto">
+          <h3>Contáctanos</h3>
+          <form action="">
+            <p>
+              <label for="nombre-completo">Nombre completo</label>
+              <input type="text" name="nombre-completo" id="nombre-completo">
+            </p>
+            <p>
+              <label>Dirección de correo electrónico</label>
+              <input type="email" name="email">
+            </p>
+            <p>
+              <label for="phone">Enter your phone number:</label>
+              <input type="tel" name="telefono" pattern="[6-9]-[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
+              <small>Format: 623 456 7890</small>
+            </p>
+            <p>Asunto</p>
+            <input type="text" name="asunto">
+          </form>
+        </div>
+        <div class="info-contacto"></div>
+      </div>
+    </div>
+
+    <!-- FINAL DEL FORMULARIO DE CONTACTO-->
 
     <div class="nav nav-soft-green">
       <div class="nav nav-light-grayish-yellow">
