@@ -1,9 +1,25 @@
 *{
-  margin: 0;
+  margin: 8;
   padding: 0;
   box-sizing: border-box;
 }
 
 body{
-  
+  padding: 0 1.5em;
+}
+
+.contenido{
+  max-width:1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.logo-contacto{
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo-contacto span{
+  color: var(--);
 }
