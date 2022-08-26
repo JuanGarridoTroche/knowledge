@@ -123,11 +123,15 @@ console.log(curso.duracion); // undefined, ya que no existe
 
 //Objetos para búsquedas
 function buscarElementoQuimico (simbolo){
-  let elementoQuimico = '';
-
-  switch (simbolo) {
-    case 'Al':
-      elementoQuimico = 'Aluminio';
-
-  }
+  let simbolosQuimicos = {
+    'Al': 'Aluminio',
+    'S': 'Azufre',
+    'Cl': 'Cloro',
+    'He': 'Helio',
+    'B': 'Boro',
+    'Li': 'Litio'
+  };
+  return simbolosQuimicos[simbolo];  
 }
+
+console.log(buscarElementoQuimico('Al')); //Si no existe, devuelve undefined
