@@ -176,6 +176,14 @@ h2.titulo{
     color: white; 
     font-size: 1rem;
   }
+  .bg-portada{ 
+    transition: all .5s;
+    background-image: url(../img/bg-portada-movil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-blend-mode: darken;
+  }
 }
 
 
