@@ -1,0 +1,10 @@
+
+
+.bg-eventos{ 
+  transition: all .5s;
+  background-image: url(../img/bg-eventos.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  background-blend-mode: darken;
+}

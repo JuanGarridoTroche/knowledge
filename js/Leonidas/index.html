@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Introduzca el link de sus google fonts -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+
+  <body>
+    <!-- Formulario de contacto -->
+    <form action="https://formsubmit.co/80735f3c53e020d63ca1d7637f1f2133" method="POST">
+      <h2>CONTACTO</h2>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="name" placeholder="Escriba su nombre completo">
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" name="email" placeholder="Correo electrónico">
+
+      <label for="telefono">Teléfono</label>
+      <input type="text" name="telefono" placeholder="Teléfono">
+
+      <label for="subject">Asunto</label>
+      <input type="text" name="subject" placeholder="Asunto">
+
+      <label for="comments">Mensaje</label>
+      <textarea name="comments" placeholder="Escriba aquí su mensaje" rows="5"></textarea>
+
+      <input type="submit" value="Enviar">
+
+      <!-- Para que no muestre la web externa desde donde enviamos el formulario hay que ocultar la página -->
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <!-- Fin del formulario de contacto -->
+
+    <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/222383054909357"></script> -->
+  </body>
+</html>

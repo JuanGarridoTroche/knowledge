@@ -15,10 +15,27 @@ body {
   margin:0;
 }
 
-.bg-portada{
- 
+.bg-portada{ 
   transition: all .5s;
   background-image: url(../img/bg-portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  background-blend-mode: darken;
+}
+
+.bg-merchandising{ 
+  transition: all .5s;
+  background-image: url(../img/bg-merchandising.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  background-blend-mode: darken;
+}
+
+.bg-trabajos{ 
+  transition: all .5s;
+  background-image: url(../img/bg-trabajos.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
