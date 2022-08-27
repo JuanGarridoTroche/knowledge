@@ -31,12 +31,13 @@ body{
 
 }
 
-contenedor-contacto > *{
+.contenedor-contacto > *{
   padding: 1em;  
 }
 
 .formulario-contacto{
   background-color: rgb(226,223,171);
+  background-size: 100%;  
 }
 
 .formulario-contacto form{
@@ -95,7 +96,7 @@ contenedor-contacto > *{
   padding: .3em;
 }
 
-@media(min-width: 950px) {
+@media(min-width: 758px) {
     body{
       padding: 0 4rem;
     }

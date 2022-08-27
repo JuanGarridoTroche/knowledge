@@ -159,7 +159,23 @@ h2.titulo{
   font-weight: bold;  
 }
 
-
-
+@media(max-width: 768px) {
+  .nav-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .close-btn{
+    opacity: 0.4;
+    position: static;
+    top: 20px;    
+  }
+  h2.titulo{
+    font-family: 'Nunito', sans-serif;
+    color: white; 
+    font-size: 1rem;
+  }
+}
 
 
