@@ -84,7 +84,7 @@ h2.titulo{
   right: 0;
   height: 100vh;
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;  
 }
 
 .nav.visible {

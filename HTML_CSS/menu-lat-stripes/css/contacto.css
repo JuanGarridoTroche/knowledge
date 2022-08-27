@@ -5,14 +5,14 @@
 }
 
 body{
-  padding: 0 1.5em;
+  padding: 0;
 }
 
 .contenido{
   max-width:1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5em;
+  padding: 0;
 }
 
 .logo-contacto{
@@ -36,8 +36,7 @@ body{
 }
 
 .formulario-contacto{
-  background-color: rgb(226,223,171);
-  background-size: 100%;  
+  background-color: rgb(226,223,171);  
 }
 
 .formulario-contacto form{
@@ -97,18 +96,25 @@ body{
 }
 
 @media(min-width: 758px) {
-    body{
-      padding: 0 4rem;
-    }
-    .contenedor-contacto{
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-    }
-    .contenedor-contacto > * {
-      padding: 2em;
-    }
-    .info-contacto h4, .info-contacto ul, .info-contacto p{
-      padding: 1em;
-      text-align: left;
-    }
+  body{
+    padding: 0 1.5em;
+  }  
+  .contenido{
+    max-width:1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+  }   
+  .contenedor-contacto{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  .contenedor-contacto > * {
+    padding: 2em;
+  }
+  .info-contacto h4, .info-contacto ul, .info-contacto p{
+    padding: 1em;
+    text-align: left;
+  }
+    
 }
