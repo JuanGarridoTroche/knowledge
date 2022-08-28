@@ -73,11 +73,21 @@ body{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;      
 }
 
-.section-1 .stats span{
+.section-1 .stats h2{
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: lighter;
+  color: var(--stat-headings);
+}
 
+.section-1 .stats h2 span{
+  font-weight: bold;  
+  font-size: 1.5rem;
+  color: var(--main-heading-stats);
 }
 
 /* Final section-1 */
@@ -89,4 +99,5 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
