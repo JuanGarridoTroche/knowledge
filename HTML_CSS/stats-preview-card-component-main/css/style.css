@@ -1,0 +1,92 @@
+/* Especificaciones de Frontendmentor */
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;  
+ }
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+/* Estilos personalizados */
+*{
+  box-sizing: border-box;
+}
+
+:root{
+--main-background: hsl(233, 47%, 7%);
+--card-background: hsl(244, 38%, 16%);
+--accent: hsl(277, 64%, 61%);
+--main-heading-stats: hsl(0, 0%, 100%);
+--main-paragraph: hsla(0, 0%, 100%, 0.75);
+--stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+html, body{
+  height: 100%;    
+}
+
+body{
+  background-color: var(--main-background);
+  display: flex; /* Utilizamos flex para manipular una dimensión (horizontal y/o vertical)*/
+  flex-direction: column;
+  justify-content: center; /*centra horizontalmente*/
+  align-items: center; /* centra verticalmente las cajas */ 
+}
+
+/* Section-1 */
+
+/* Tarjeta (card) */
+.card{
+  width: 100%;  
+  max-width: 1440px;    
+  background-color: var(--card-background);
+  display: flex;
+}
+
+/* Texto section-1 */
+.section-1{
+  padding: 3rem 6rem 3rem 3rem;
+  color: white;
+  flex-basis: 50%;
+}
+
+/* Título section-1*/
+.section-1 .title{
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.section-1 .title span{
+  color: var(--accent);
+}
+
+/* Párrafo section-1 */
+.section-1 .parrafo{
+  color: var(--main-paragraph);
+  font-size: 1.5rem;
+}
+
+.section-1 .stats{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 1.5rem;  
+}
+
+.section-1 .stats span{
+
+}
+
+/* Final section-1 */
+
+/* Imagen section-2 */
+.section-2{
+  flex-basis: 50%;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
