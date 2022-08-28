@@ -21,10 +21,13 @@
 --main-heading-stats: hsl(0, 0%, 100%);
 --main-paragraph: hsla(0, 0%, 100%, 0.75);
 --stat-headings: hsla(0, 0%, 100%, 0.6);
+--Inter: 'Inter', sans-serif;
+--Lexend-deca: 'Lexend Deca', sans-serif;
 }
 
 html, body{
-  height: 100%;    
+  height: 100%;  
+  font-size: 62.5%;    
 }
 
 body{
@@ -33,14 +36,15 @@ body{
   flex-direction: column;
   justify-content: center; /*centra horizontalmente*/
   align-items: center; /* centra verticalmente las cajas */ 
+  width:1440px;
 }
 
 /* Section-1 */
 
 /* Tarjeta (card) */
 .card{
-  width: 100%;  
-  max-width: 1440px;    
+  /* width: 100%;   */
+  /* max-width: 1440px;     */
   background-color: var(--card-background);
   display: flex;
 }
@@ -57,6 +61,7 @@ body{
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
+  font-family: var(--Inter);
 }
 
 .section-1 .title span{
@@ -65,29 +70,40 @@ body{
 
 /* Párrafo section-1 */
 .section-1 .parrafo{
-  color: var(--main-paragraph);
+  color: var(--stat-headings);
   font-size: 1.5rem;
+  font-family: var(--Lexend-deca);
 }
 
 .section-1 .stats{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  font-size: 1.5rem;      
+  font-size: 1.5rem;
+  font-family: var(--Lexend-deca);   
+  margin-bottom: 0%;
 }
 
 .section-1 .stats h2{
   text-transform: uppercase;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   font-weight: lighter;
   color: var(--stat-headings);
 }
 
 .section-1 .stats h2 span{
   font-weight: bold;  
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--main-heading-stats);
+}
+
+.section-1 .stats .stat1 span{
+  text-transform: uppercase;
+}
+
+.section-1 .stats .stat1 span{
+  text-transform: lowercase;
 }
 
 /* Final section-1 */
@@ -95,6 +111,7 @@ body{
 /* Imagen section-2 */
 .section-2{
   flex-basis: 50%;
+  background-color: var(--card-background);
   background-image: url(../images/image-header-mobile.jpg);
   background-position: center;
   background-size: cover;
