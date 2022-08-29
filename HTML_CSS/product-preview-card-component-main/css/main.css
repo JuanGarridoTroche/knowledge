@@ -32,6 +32,16 @@ body{
   max-width: 720px;
 }
 
+@media(max-width: 375px) {
+  .card{
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+  }
+}
+
 .card .img{
   background-image: url(../images/image-product-desktop.jpg);
   /* display: block;
@@ -126,3 +136,25 @@ body{
   color: hsl(228, 45%, 44%);
 }
 /* Final del Footer */
+
+
+
+  @media(max-width: 375px) {
+  .card .img{
+    background-image: url(../images/image-product-mobile.jpg);
+    /* display: block;
+    object-fit: cover; */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .card .producto{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 0px 0px 10px 10px;
+  }
+}
