@@ -1,5 +1,87 @@
 
+:root{
+  /* Primary colors*/
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
 
+  /* Neutral colors*/
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Fuentes*/
+  --fraunces: 'Fraunces', serif;
+  --montserrat: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: var(--Cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--montserrat);
+  font-size: 62.5%;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.card .img{
+  background-image: url(../images/image-product-desktop.jpg);
+  display: block;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;  
+}
+
+.card .producto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  background-color: var(--White);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card .producto h4{  
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.card .producto h3{
+  font-family: var(--fraunces);
+  font-size: 2.2rem;
+  padding: 0px 20px;
+  font-weight: 700;
+}
+
+.card .producto p{
+  font-size: 1rem;
+  color: var(--Dark-grayish-blue);
+  padding: 0px 20px;
+}
+
+.card .producto .precios{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card .producto .precios h2{
+  color: var(--Dark-cyan);
+  font-family: var(--fraunces);
+  font-size: 2rem;
+}
 
 /* Footer */
 .attribution {
