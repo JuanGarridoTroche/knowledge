@@ -133,7 +133,9 @@
   color: white;
   border-radius: 10px;   
   padding: 20px;
-  box-shadow: 0px 5px 20px 0px hsla(245, 75%, 52%, 0.5);
+  box-shadow: 0px 17px 17px -8px hsl(245, 75%, 52%); /* https://html-css-js.com/css/generator/box-shadow/ */
+  /* box-shadow: 0px 5px 20px 0px hsla(245, 75%, 52%, 0.5); */
+  /*box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgb(131 166 210 / 50%);*/
 }
 
  .card .section-2 .pago .btn-secundario{
@@ -154,4 +156,13 @@ footer .attribution {
 }
 footer .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 340px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 }
