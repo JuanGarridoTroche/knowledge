@@ -1,4 +1,3 @@
-
 :root{
   /* Primary colors*/
   --Dark-cyan: hsl(158, 36%, 37%);
@@ -30,6 +29,7 @@ body{
   flex-direction: row;
   justify-content: center;
   box-sizing: border-box;  
+  max-width: 720px;
 }
 
 .card .img{
@@ -39,15 +39,15 @@ body{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;  
-  width: 100%;
+  width: 80%;
+  padding: 0px 80px;
   border-radius: 10px 0px 0px 10px;   
 }
 
 .card .producto{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-left: 30px;
+  padding: 10px 40px 40px 40px;
   background-color: var(--White);
   border-radius: 0px 10px 10px 0px;
 }
@@ -57,37 +57,70 @@ body{
   font-weight: 500;
   font-size: 1rem;
   color: var(--Dark-grayish-blue);
+  margin-bottom: 0;
 }
 
 .card .producto h3{
   font-family: var(--fraunces);
   font-size: 2.2rem;
-  padding: 0px 20px;
+  padding: 0px 40px 0px 0px;
   font-weight: 700;
+  padding-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 30px;
 }
 
 .card .producto p{
   font-size: 1rem;
   color: var(--Dark-grayish-blue);
-  padding: 0px 20px;
+  padding: 0px 40px 0px 0px;
+  line-height: 25px;
+  padding-top: 0px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .card .producto .precios{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  align-items: center;
 }
 
 .card .producto .precios h2{
   color: var(--Dark-cyan);
   font-family: var(--fraunces);
-  font-size: 2rem;
+  font-size: 2.3rem;
+  padding-right: 10px;
+}
+
+.card .producto .precios h4{
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  padding-left: 30px;
+}
+
+.card .producto .btn{
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  color: var(--White);
+  background-color: var(--Dark-cyan);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card .producto .btn:hover{
+  background-color: hsl(157, 35%, 22%);
 }
 
 /* Footer */
 .attribution {
   font-size: 11px;
-  text-align: center;
+  text-align: center; 
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
