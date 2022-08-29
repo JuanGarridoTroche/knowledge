@@ -1,0 +1,42 @@
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+ :root{
+  --red-hot-display: 'Red Hat Display', sans-serif;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+ }
+
+ body{
+  background-color: var(--pale-blue);
+  font-size: 62.5%;
+  max-width: 1440px;
+ }
+
+ .card{
+  font-family: var(--red-hot-display);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  
+ }
+
+ /* Imagen */
+ .card section-1{
+  background-image: url(../images/illustration-hero.svg);
+  border-radius: 8px 8px 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+ }
