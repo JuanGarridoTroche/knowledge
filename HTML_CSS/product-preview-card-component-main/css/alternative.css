@@ -1,0 +1,132 @@
+:root {
+  /* Primary colors*/
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral colors*/
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Fuentes*/
+  --fraunces: "Fraunces", serif;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{  
+  min-height: 100vh;
+  font-size: 62.5%;
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--montserrat);
+  padding: 60px;
+  margin: 60px;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card .img{  
+  flex-basis: 50%;
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  box-sizing: border-box;
+}
+
+.card .producto{
+  flex-basis: 50%;
+  display: flex;  
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 0px 10px 10px 0px;
+  box-sizing: border-box;
+  
+}
+
+.card .producto h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 0;  
+}
+
+.card .producto h3 {
+  font-family: var(--fraunces);
+  font-size: 2.2rem;
+  padding: 0px 40px 0px 0px;
+  font-weight: 700;
+  padding-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+.card .producto p {
+  font-size: .88rem;
+  color: var(--dark-grayish-blue);
+  padding: 0px 40px 0px 0px;
+  line-height: 25px;
+  padding-top: 0px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.card .producto .precios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+}
+
+.card .producto .precios h2 {
+  color: var(--dark-cyan);
+  font-family: var(--fraunces);
+  font-size: 2.3rem;
+  padding-right: 10px;
+}
+
+.card .producto .precios h4 {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  padding-left: 30px;
+}
+
+.card .producto .btn {
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: var(--dark-cyan);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card .producto .btn:hover {
+  background-color: hsl(157, 35%, 22%);
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Final del Footer */
