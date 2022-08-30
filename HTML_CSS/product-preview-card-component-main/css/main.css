@@ -1,4 +1,4 @@
-:root{
+:root {
   /* Primary colors*/
   --Dark-cyan: hsl(158, 36%, 37%);
   --Cream: hsl(30, 38%, 92%);
@@ -9,11 +9,11 @@
   --White: hsl(0, 0%, 100%);
 
   /* Fuentes*/
-  --fraunces: 'Fraunces', serif;
-  --montserrat: 'Montserrat', sans-serif;
+  --fraunces: "Fraunces", serif;
+  --montserrat: "Montserrat", sans-serif;
 }
 
-body{
+body {
   background-color: var(--Cream);
   display: flex;
   flex-direction: column;
@@ -22,55 +22,86 @@ body{
   min-height: 100vh;
   font-family: var(--montserrat);
   font-size: 62.5%;
+  padding: 10px;
+  margin: 10px;
 }
 
-.card{
+
+
+.card {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   max-width: 720px;
 }
 
-@media(max-width: 375px) {
-  .card{
-    display: flex; 
-    flex-direction: column;   
+@media (max-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     box-sizing: border-box;
   }
 }
 
-.card .img{
+.card .img {
   background-image: url(../images/image-product-desktop.jpg);
   /* display: block;
   object-fit: cover; */
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   width: 80%;
   padding: 0px 80px;
-  border-radius: 10px 0px 0px 10px;   
+  border-radius: 10px 0px 0px 10px;
 }
 
-.card .producto{
+@media(max-width: 375px) {
+    .card .img {
+      min-height:40vh;
+      width: 100%;
+      background-image: url(../images/image-product-mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;   
+      background-position: center center;            
+      border-radius: 10px 10px 0px 0px;
+      box-sizing: border-box;
+    }
+}
+
+.card .producto {
   display: flex;
   flex-direction: column;
   padding: 10px 40px 40px 40px;
   background-color: var(--White);
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;  
 }
 
-.card .producto h4{  
+@media(max-width: 375px) {
+    .card .producto{
+      padding: 0px 5px 10px 5px;
+      border-radius: 0px 0px 10px 10px;
+    }
+}
+
+.card .producto h4 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
   color: var(--Dark-grayish-blue);
-  margin-bottom: 0;
+  margin-bottom: 0;  
 }
 
-.card .producto h3{
+@media(max-width: 375px) {
+    .card .producto h4 {
+      letter-spacing: 4px;
+      padding-bottom: 10px;
+    }
+}
+
+.card .producto h3 {
   font-family: var(--fraunces);
   font-size: 2.2rem;
   padding: 0px 40px 0px 0px;
@@ -81,8 +112,8 @@ body{
   line-height: 30px;
 }
 
-.card .producto p{
-  font-size: 1rem;
+.card .producto p {
+  font-size: .88rem;
   color: var(--Dark-grayish-blue);
   padding: 0px 40px 0px 0px;
   line-height: 25px;
@@ -91,7 +122,7 @@ body{
   margin-bottom: 0;
 }
 
-.card .producto .precios{
+.card .producto .precios {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,20 +130,27 @@ body{
   align-items: center;
 }
 
-.card .producto .precios h2{
+.card .producto .precios h2 {
   color: var(--Dark-cyan);
   font-family: var(--fraunces);
   font-size: 2.3rem;
   padding-right: 10px;
 }
 
-.card .producto .precios h4{
+.card .producto .precios h4 {
   font-size: 0.8rem;
   text-decoration: line-through;
   padding-left: 30px;
 }
 
-.card .producto .btn{
+@media(max-width: 375px) {
+  .card .producto .precios h4{
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.card .producto .btn {
   border: none;
   background: none;
   width: 100%;
@@ -123,38 +161,17 @@ body{
   padding: 20px;
 }
 
-.card .producto .btn:hover{
+.card .producto .btn:hover {
   background-color: hsl(157, 35%, 22%);
 }
 
 /* Footer */
 .attribution {
   font-size: 11px;
-  text-align: center; 
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 /* Final del Footer */
 
-
-
-  @media(max-width: 375px) {
-  .card .img{
-    background-image: url(../images/image-product-mobile.jpg);
-    /* display: block;
-    object-fit: cover; */
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .card .producto{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--White);
-    border-radius: 0px 0px 10px 10px;
-  }
-}
