@@ -1,7 +1,139 @@
+:root{
+  /* Primary colors */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+
+  /* Fuente */
+  --karla: 'Karla', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  font-size: 62.5%;
+  background-color: var(--light-gray);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: var(--karla);
+}
+
+/** Artículo*/
+.articulo{
+  max-width: 620px;
+}
+/** Section-1*/
+.articulo .section-1{
+  background-color: white;
+  margin: 0;
+  padding: 20px 30px;
+  border-radius: 15px 15px 0 0;
+}
+
+.articulo .section-1 h2{
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.articulo .section-1 h3{
+  color: var(--bright-yellow);
+}
+
+.articulo .section-1 p{
+  color: var(--grayish-blue);
+}
+/** FIN Section-1*/
+
+/** Section-2*/
+.articulo .section-2{
+  display: flex;
+  justify-content: row;    
+}
+
+/** Producto*/
+
+.articulo .section-2 .producto{
+  flex-basis: 50%;
+  background-color: var(--cyan);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  border-radius: 0 0px 0px 15px;
+}
+
+.articulo .section-2 .producto h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.articulo .section-2 .producto .pvp{
+  font-size: 2rem;
+  font-weight: 700; 
+  margin: 0; 
+}
+
+.articulo .section-2 .producto .pvp span{
+  font-size: 1rem;  
+  vertical-align: middle;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+
+.articulo .section-2 .producto .pvp-remark{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--light-gray);
+  padding-bottom: 12px;
+}
+
+.articulo .section-2 .producto .btn{
+  border: none;
+  color: white;
+  background-color: var(--bright-yellow);
+  padding: 15px;
+  margin: 25px 25px 25px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/** FIN Producto*/
+
+.articulo .section-2 .parrafo h2{
+  color: white;
+}
+
+.articulo .section-2 .parrafo{
+  flex-basis: 50%;  
+  background-color: var(--cyan);
+  opacity: 0.8;
+  color: var(--light-gray);
+  padding: 0 30px 50px 30px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  font-weight: lighter;
+  border-radius: 0 0px 15px 0px;
+}
 
 
+/** FIN Section-2*/
 
-
+/** FIN Artículo*/
 
 /** Footer */
 .attribution {
