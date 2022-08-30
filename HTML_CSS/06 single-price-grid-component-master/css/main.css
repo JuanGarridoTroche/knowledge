@@ -39,7 +39,7 @@ body{
   background-color: white;
   margin: 0;
   padding: 20px 30px;
-  border-radius: 15px 15px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .articulo .section-1 h2{
@@ -59,11 +59,16 @@ body{
 /** Section-2*/
 .articulo .section-2{
   display: flex;
-  justify-content: row;    
+  justify-content: row; 
+}
+
+@media(max-width: 375px) {
+  .articulo .section-2{
+    flex-direction: column;    
+  }
 }
 
 /** Producto*/
-
 .articulo .section-2 .producto{
   flex-basis: 50%;
   background-color: var(--cyan);
@@ -72,18 +77,23 @@ body{
   flex-direction: column;
   justify-content: center;
   padding-left: 30px;
-  border-radius: 0 0px 0px 15px;
+  border-radius: 0px 0px 0px 5px;
+}
+
+@media(max-width: 375px) {
+  .articulo .section-2 .producto{
+    border-radius: 0;
+  }
 }
 
 .articulo .section-2 .producto h2{
   font-size: 1.6rem;
   font-weight: 400;
-  text-align: left;
-  vertical-align: bottom;
+  text-align: left;  
 }
 
 .articulo .section-2 .producto .pvp{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700; 
   margin: 0; 
 }
@@ -93,6 +103,8 @@ body{
   vertical-align: middle;
   font-weight: 400;
   color: var(--light-gray);
+  letter-spacing: 2px;
+  padding-left: 10px;
 }
 
 .articulo .section-2 .producto .pvp-remark{
@@ -107,7 +119,7 @@ body{
   color: white;
   background-color: var(--bright-yellow);
   padding: 15px;
-  margin: 25px 25px 25px 0;
+  margin: 0px 25px 25px 0;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -127,7 +139,7 @@ body{
   font-size: 1.5rem;
   line-height: 20px;
   font-weight: lighter;
-  border-radius: 0 0px 15px 0px;
+  border-radius: 0 0px 5px 5px;
 }
 
 
