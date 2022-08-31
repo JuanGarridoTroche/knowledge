@@ -122,9 +122,18 @@ article:not(.white) {
   color: var(--very-dark-blackish-blue);
 }
 
-@media (max-width:1024px){
-  body{
-    padding: 20px;
+@media (max-width:758px){  
+  main{
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+    width: 95%;
+    grid-gap: 10px;
+  }
+
+  .card{
+    grid-column: unset !important;
+    grid-row: unset !important;
   }
 }
 
