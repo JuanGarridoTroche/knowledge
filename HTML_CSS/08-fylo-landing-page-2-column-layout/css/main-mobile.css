@@ -1,0 +1,56 @@
+@media(max-width: 580px) {
+  html, body{
+    font-size: 62.5%;
+    padding: 0px 0px;
+  }
+
+  /** section-1: All files in one secure loaction */
+  .section-1{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+
+  div .get-started{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+  }
+
+  .get-started input{  
+    width: 100%;
+    padding: 7px;
+  }
+
+  .get-started .btn{     
+    cursor: pointer;
+    width: 100%;    
+    margin: 10px 0px 0px 0px;
+    max-width: 275px; 
+  }
+
+  .section-1 picture img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .section-2 .section-2-1{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+    padding-top: 60px;
+    /* max-width: 415px; */
+  }  
+  .section-2-1 picture img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+  .tarjeta{
+    width: 100%;
+  }
+  .tarjeta h2{
+    width: 100%;
+  }
+}

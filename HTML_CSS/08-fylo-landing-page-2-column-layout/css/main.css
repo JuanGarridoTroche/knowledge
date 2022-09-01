@@ -122,10 +122,6 @@ main section picture img{
   padding-top: 0;
 }
 
-.section-1-1{
-  /* max-width: 415px; */
-}
-
 div .get-started{
   display: flex;
   flex-direction: row;  
@@ -143,7 +139,7 @@ div .get-started{
   border-radius: 4px;
   color: white;
   background-color: var(--bright-blue);
-  padding: 10px;
+  padding: 7px;
   cursor: pointer;
   margin-left: 10px;
   margin-right: 30px;
@@ -160,13 +156,6 @@ div .get-started{
 /** section-2: Stay productive, wherever you are */
 .section-2{
   background-image: url(../images/bg-curve-desktop.svg);
-  /* background-repeat: no-repeat; */
-  /* background-position: cover; */
-  /* align-self: flex-start; */
-  /* font-weight: 700; */
-  /* flex-basis: 50%; */
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 .section-2 .section-2-1{
