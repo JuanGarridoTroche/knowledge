@@ -242,10 +242,6 @@ div .get-started{
   max-width: 425px;
 }
 
-.section-3 .flex{
-  flex-basis: 50%;
-}
-
 .section-3 form{
   flex-basis: 50%;
   display: flex;
