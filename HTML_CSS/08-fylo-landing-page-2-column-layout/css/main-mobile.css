@@ -11,6 +11,10 @@
     padding-top: 0;
   }
 
+  .section-1 .section-1-1 h2, p{
+    text-align: center;
+  }
+
   div .get-started{
     display: flex;
     flex-direction: column; 
@@ -52,5 +56,22 @@
   }
   .tarjeta h2{
     width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .tarjeta p{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .tarjeta a{
+    display: flex;
+    justify-content: center;
+    max-width: unset;
+    border-bottom: ;
   }
 }
