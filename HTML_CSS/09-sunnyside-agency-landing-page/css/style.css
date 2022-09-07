@@ -1,0 +1,128 @@
+:root
+{
+  /* Primary colors */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --color-graphic-design-text: hsl(167, 40%, 24%); 
+  --color-photography-text: hsl(198, 62%, 26%);
+  --color-footer: hsl(168, 34%, 41%);
+
+  /* Neutral colors */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-barlow: 'Barlow', sans-serif; /* weight: 600*/
+  --font-fraunces: 'Fraunces', serif; /* weight: 700, 900*/
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: var(--font-barlow);
+}
+
+ul, li{
+  list-style: none;
+}
+aside{
+  background-image: url(../images/desktop/image-header.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 0px -300px; */
+  background-position-x: center;
+  background-position-y: -200px;
+}
+
+.menu-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.padd-15{
+  padding: 0px 15px;  
+}
+
+.menu-container .menu-logo{  
+  max-width: 1440px;
+  width: 100%;
+  font-size: var(--font-fraunces);
+  text-transform: lowercase;
+  font-weight: 900;
+  padding-left: 30px;
+  color: var(--white);
+}
+
+.menu-container .menu-content ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  max-width: 100%;  
+}
+
+.menu-container .menu-content ul li{
+  padding: 10px 30px;
+}
+
+.menu-container .menu-content ul li a{
+  color: var(--white);
+}
+
+.menu-container .menu-content .contact{
+  background-color: var(--white);
+  color: var(--color-graphic-design-text);
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-family: var(--font-fraunces);
+}
+.creatives{
+  text-align: center;
+  color: var(--white);
+  padding-top: 60px;
+}
+
+.creatives h2{
+  font-family: var(--font-fraunces);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 20px;
+}
+.creatives p i{
+  height: 100vh;
+  max-height: 100%;
+  
+}
+
+/* footer */
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
