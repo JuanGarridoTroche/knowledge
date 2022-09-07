@@ -13,12 +13,10 @@
   }
 
   .main-content.section-inner-1{
-    margin: 0;
-    padding: 0;
     width: 100%;
     max-width: 856px;
     display: flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     place-content: center;
   }
 
@@ -27,4 +25,14 @@
     flex-direction: column-reverse;  
   }
   /*todo ========== MAIN END ========== */
+}
+
+@media(max-width: 700px) {
+  .aside{
+
+  }
+
+  .menu-container .menu-content ul{
+      
+  }
 }
