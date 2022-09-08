@@ -28,6 +28,8 @@
 
 ::before,::after{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html{
@@ -57,10 +59,11 @@ ul, li{
 /** ASIDE START*/
 aside{
   background-image: url(../images/desktop/image-header.jpg);
-  height: 85vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ; 
+
 }
 
 .aside {
@@ -82,19 +85,14 @@ aside{
 
 .menu-container .menu-logo{    
   box-sizing: border-box;
-  font-size: var(--font-fraunces);
-  text-transform: lowercase;
-  font-weight: 900;
-  padding-left: 30px;
-  color: var(--white);
-  padding-top: 0;
-  margin-top: 0;
+  padding: 15px 0 15px 50px;
 }
 
 .menu-container .menu-content ul{
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center; 
+  
   max-width: 100%;  
 }
 
@@ -211,7 +209,7 @@ aside{
   box-sizing: border-box;
   margin: 0;
   padding: 0; 
-  width: 81.2%;
+  width: 100%;
 }
 
 .main-content picture.main-content-img img{ 
