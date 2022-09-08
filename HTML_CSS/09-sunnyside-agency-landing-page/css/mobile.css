@@ -26,9 +26,24 @@
     flex-direction: column-reverse;  
   }
 
+  .main-content.section-inner-2 .main-content-text{
+    width: 100%;
+    max-width: 654px;   
+    min-width: 375px; 
+    text-align: center;
+    padding: 50px 100px;
+  }
+
   .main-content.section-inner-3{
     display: flex;
     flex-direction: column;  
+  }
+
+  .main-content .main-content.section-inner-3 .main-content-bg-text-1 p{
+    width: 100%;
+    max-width: 654px;   
+    min-width: 375px; 
+    text-align: center;    
   }
 
   .testimonials-content{
