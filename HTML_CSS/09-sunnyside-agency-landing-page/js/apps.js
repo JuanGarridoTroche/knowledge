@@ -8,5 +8,3 @@
 
 // var hamburguesa = document.getElementsByClassName('.hamburger');
 // hamburguesa.style.display = 'none';
-
-var  hamburguesa = document.getElementById("menu-hamburger");
