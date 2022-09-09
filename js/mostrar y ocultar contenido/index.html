@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#premio, #triste{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Felicitaciones acabas de ganar un premio:</h1>
+	<button type="button" onclick="mostrarPremio();">Ver premio</button>
+
+	<div id="premio">
+		<p>Te ganaste un pasaje a Cusco</p>
+		<a href="javascript:void(0);" onclick="ocultarPremio();">No me gusta, no lo quiero!</a>
+	</div>
+
+	<div id="triste">
+		<h3>:'(</h3>
+	</div>
+
+	<script src="js/apps.js"></script>
+</body>
+</html>
