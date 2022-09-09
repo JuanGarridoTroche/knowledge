@@ -6,6 +6,8 @@ body{
 
 .contenedor{  
   margin: auto;
+  padding: 100px;
+  
 }
 .contenedor .contenido{
   width: 100px;
@@ -13,4 +15,14 @@ body{
   background-color: aquamarine;
   border: 1px solid #000000;
   padding: 20px;
+  margin: 20px;  
+}
+
+button{
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: bisque;
+  border: 1px solid black;  
+  
 }
