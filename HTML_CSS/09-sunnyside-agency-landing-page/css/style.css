@@ -49,6 +49,9 @@ body{
   align-items: center;
   max-width: 1200px;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ul, li{
@@ -56,36 +59,52 @@ ul, li{
 }
 
 
-/** ASIDE START*/
-aside{
+/** NAV START*/
+header{
   background-image: url(../images/desktop/image-header.jpg);
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center ; 
+  background-position: center center; 
 
 }
 
-.aside {
+.nav {
   padding-bottom: 0;
   margin-bottom: 0;
+  padding-top: 32px;
   max-width: 1200px;
   width: 100%;
 }
 
 .menu-container{
   display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
+  justify-content: space-between; 
 }
 
 .padd-15{
   padding: 0px 15px;  
 }
 
-.menu-container .menu-logo{    
-  box-sizing: border-box;
-  padding: 15px 0 15px 50px;
+nav .menu-container .visible-nav{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 0 22px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+nav .menu-container .hidden-nav{
+   
+}
+
+nav .menu-container .visible-nav .hamburger{
+  display: none; 
+}
+
+.menu-container .menu-logo{   
+  padding: 15px 0 15px 70px;
 }
 
 .menu-container .menu-content ul{
@@ -116,7 +135,7 @@ aside{
 .creatives{
   text-align: center;
   color: var(--white);
-  padding-top: 60px;
+  padding-top: 15px;
 }
 
 .creatives h2{
@@ -130,14 +149,9 @@ aside{
 .creatives img{
   padding-top: 100px;  
 }
-/** ASIDE END*/
+/** NAV END*/
 
 /*todo ========== MAIN START ========== */
-.main{
-  margin: 0;
-  padding: 0;
-}
-
 .main-container{
   display: flex;
   flex-direction: column;
@@ -201,6 +215,9 @@ aside{
     radial-gradient(farthest-side, #F9D400 98%,transparent 100%) bottom right/10px 10px,
     radial-gradient(farthest-side, #F9D400 98%,transparent 100%) bottom left /10px 10px,
     linear-gradient(#F9D400,#F9D400) bottom/calc(100% - 10px) 10px; 
+    border-radius: 20px;
+    bottom: 5px;
+    z-index: -1;
 }
 
 .main-content picture.main-content-img{
@@ -240,7 +257,16 @@ aside{
   background:
   radial-gradient(farthest-side, #FE7866 98%,transparent 100%) bottom right/10px 10px,
   radial-gradient(farthest-side, #FE7866 98%,transparent 100%) bottom left /10px 10px,
-  linear-gradient(#FE7866,#FE7866) bottom/calc(100% - 10px) 10px;
+  linear-gradient(#FE7866,#FE7866) bottom/calc(100% - 10px) 10px;  
+  /* background-color: var(--color-photography-text);
+  position: absolute;
+  content: '';
+  width: 120%;
+  left: -10px;
+  bottom: 0;
+  height: 0px;
+  z-index: -1; */  
+  border-radius: 20px;
 }
 
   /*? ========== Section inner-2 End ========== */
@@ -354,22 +380,11 @@ aside{
   /*? ========== Section Image Gallery Start ========== */
   .img-gallery{
     display: flex;
-    flex-direction: row; 
-    width: 100%; 
-    margin: 0;
-    padding: 0;
   }
 
-  .img-item{
-    margin: 0;
-    padding: 0;
-  }
-
-  .img-gallery .img-item img{
-    flex: 0 0 25%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;    
+  .img-gallery .img-item img{    
+    max-width: 100%;  
+    max-height: 100%; 
   }
   /*? ========== Section Image gallery End ========== */
 
@@ -443,9 +458,9 @@ footer{
     font-size: 11px;
     text-align: center;
   }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 
 /** ========== Footer End ========== */

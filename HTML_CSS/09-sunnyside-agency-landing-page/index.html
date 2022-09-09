@@ -13,28 +13,36 @@
   <script src="https://kit.fontawesome.com/9ba512bc98.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
-<body class="padd-15">
+<body>
   <main>
-    <aside class="aside">
-      <div class="menu-container">
-        <div class="menu-logo padd-15">
-          <img src="images/logo.svg" alt="logo">
+    <header>
+      <nav class="nav">
+        <div class="menu-container">
+          <div class="visible-nav">
+            <div class="menu-logo padd-15">
+              <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="padd-15">
+              <img src="images/icon-hamburger.svg" alt="Menú" class="hamburger">
+            </div>
+          </div>                   
+          <div class="menu-content">  
+            <div class="triangle-rectangle"></div>          
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#" class="contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="menu-content padd-15">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#" class="contact">Contact</a></li>
-          </ul>
+        <div class="creatives padd-15">
+          <h2>We are creatives</h2>
+          <img src="/images/icon-arrow-down.svg" alt="">
         </div>
-      </div>
-      <div class="creatives padd-15">
-        <h2>We are creatives</h2>
-        <img src="/images/icon-arrow-down.svg" alt="">
-      </div>
-    </aside>
-    <section class="main-container">
+      </nav>
+    </header>
+    <div class="main-container">
       <section class="main-content section-inner-1">
         <div class="main-content-text padd-15">
           <h2>Transform your brand</h2>
@@ -117,7 +125,7 @@
           </picture>
         </section>
       </section>    
-    </section>    
+    </div>    
   </main>     
   <footer>
     <div class="footer-content">
@@ -142,5 +150,6 @@
       Coded by <a href="#">Juan Garrido Troche</a>.
     </div>
   </footer>  
+  <script src="/js/apps.js"></script>
 </body>
 </html>
