@@ -17,14 +17,47 @@ body{
 
 .item-container{
   display:flex;
-  flex-direction: row;
+  flex-direction: row;  
 }
 
 .item-container .item-content{
   display: flex;
   flex-direction: column; 
+  border: 1px solid #CBCACC;
+  border-radius: 7px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-container .item-content img{
   width: 150px;
+  flex-basis: 49%;
+  height: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.item-container .item-content .title{
+padding: 15px;
+flex-basis: 17%;
+height: 100%;
+text-align: left;
+}
+
+.item-container .item-content .price{
+  padding: 0 15px 15px 15px;
+  flex-basis: 17%;
+  height: 100%;
+}
+
+.item-container .item-content .comprar{
+  border: none;
+  background-color: #373941;
+  color: white;
+  width: 70%;
+  border-radius: 5px;  
+  flex-basis: 17%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
 }
