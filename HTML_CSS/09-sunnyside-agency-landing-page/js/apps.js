@@ -1,10 +1,16 @@
+window.onload = inicio;
 
-// const hamburger = document.querySelector(".hamburger");
-// const menuContent = document.querySelector(".menu-content");
+function inicio(){
+document.getElementById("menu-hamburger").onclick = mostrarMenu;
+}
 
-// hamburger.addEventListener("click", () => {
-//   menuContent.classList.toggle("active");
-// });
+function mostrarMenu(){
+  let hamburguesa = document.querySelector(".menu-content");
+  if (hamburguesa.style.display == "none"){
+    hamburguesa.style.display = "block";
+  } else {
+    hamburguesa.style.display = "none";
+  }
+}
 
-// var hamburguesa = document.getElementsByClassName('.hamburger');
-// hamburguesa.style.display = 'none';
+//Al hacer click sobre la hamburguesa, quiero que se muestre el menú (.menu-content)
