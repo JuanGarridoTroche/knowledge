@@ -1,0 +1,82 @@
+:root{
+  /*? COLORES*/
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+  --font-Inter: 'Inter', sans-serif; /* Weights: 300, 500, 700 */
+}
+
+*{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: var(--font-Inter);
+}
+
+/** ==================== CONTAINER Start ==================== */
+  /*todo ==================== CARD Start ==================== */
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: items;
+  }
+
+  .container .card{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .card .card-content .parrafo{
+    padding: 0 100px;
+    font-size: 1.6rem;
+    font-family: var(--font-Inter);
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .container .card .card-content .firma{
+    display: flex;
+    /* flex-basis: 30%;     */
+  }
+
+  .container .card .card-content .firma h2.nombre{
+    font-size: 1.6rem;
+    text-align: left;  
+    margin: 20px; 
+  }
+
+  .container .card .card-content .firma .educacion{
+    font-size: 1.6rem;
+    color: var(--Grayish-Blue);
+    margin: 20px;
+  }
+
+  .container .card picture img{
+    max-width: 500px;
+    width: 100%;
+    padding: 50px; 
+  }
+
+  /*todo ==================== CARD End ==================== */
+
+/** ==================== CONTAINER End ==================== */
+
+/** ==================== FOOTER Start ==================== */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a{
+    color: hsl(228, 45%, 44%);
+  }
+/** ==================== FOOTER End ==================== */

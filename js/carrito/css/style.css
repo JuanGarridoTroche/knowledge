@@ -16,6 +16,11 @@ body{
   font-size: 1.6rem; 
 }
 
+hr{
+  width: 100%;
+  color:  #373941;
+}
+
 .item-container{
   display:flex;
   flex-direction: row;  
