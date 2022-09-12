@@ -20,7 +20,12 @@ body{
   .container{
     display: flex;
     flex-direction: column;
-    align-items: items;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 15px;
+    margin: 15px;
   }
 
   .container .card{
@@ -36,16 +41,23 @@ body{
   }
 
   .container .card .card-content .parrafo{
-    padding: 0 100px;
-    font-size: 1.6rem;
+    padding: 0 0 0 0px;
+    font-size: 1.8rem;
     font-family: var(--font-Inter);
     font-weight: 500;
     letter-spacing: 2px;
+    max-width: 480px;
+    width: 100%;
+    position: absolute;
+    line-height-step: 10px;
+    height: 120px;
   }
 
   .container .card .card-content .firma{
-    display: flex;
-    /* flex-basis: 30%;     */
+   
+   display: flex;
+   justify-content: flex-end; 
+    
   }
 
   .container .card .card-content .firma h2.nombre{
@@ -60,11 +72,31 @@ body{
     margin: 20px;
   }
 
-  .container .card picture img{
-    max-width: 500px;
-    width: 100%;
-    padding: 50px; 
+  .container .card picture img{    
+    width: 70%;
+    margin: 50px 50px 50px 0; 
+    flex-basis: 50%;
+    
   }
+
+  /* div {
+    position: relative;
+    width: 460px;
+    height: 230px;
+}
+img, p {
+    position: absolute;
+    width: 100%;
+}
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+} */
 
   /*todo ==================== CARD End ==================== */
 
