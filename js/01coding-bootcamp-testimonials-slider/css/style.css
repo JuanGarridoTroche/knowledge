@@ -31,6 +31,10 @@ body{
   .container .card{
     display: flex;
     flex-direction: row;
+    background-image: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 340px 0px;
+    background-size: 33rem;    
   }
 
   .container .card .card-content{
@@ -38,17 +42,37 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-basis: 40%;
+    flex-basis: 35%;
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;   
+    background-position: 20px 290px;
+    background-size: contain;
   }
 
-  .container .card .card-content .imagen{
+  .container .card .imagen{
     display: flex;
     flex-direction: column;
-    align-content: flex-end ;
+    align-content: flex-end ; 
+    flex-basis: 65%;  
+    box-sizing: border-box;
+    
+  }
+  .container .card .imagen picture{
+    max-width: 320px;
+    max-height: 320px;
+    width: 100%;
+    height: 100%; 
+    box-sizing: border-box;
+  }
+
+  .container .card .imagen picture img{
+    width: 80%;
+    border-radius: 5px;
+    margin: 25px;
   }
 
   .container .card .card-content .parrafo{
-    padding: 0;
+    color: var(--Dark-Blue);
     font-size: 1.8rem;
     font-family: var(--font-Inter);
     font-weight: 500;
@@ -57,31 +81,45 @@ body{
     width: 100%;
     line-height-step: 10px;    
     position: absolute;
+    box-sizing: border-box;    
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 70px 0px;
+    background-size: 7rem;
+    padding-top: 20px;
   }
 
   .container .card .card-content .firma{   
    display: flex;
-   width: 100%;       
+   /* max-width: 500px; */
+   width: 350px;       
    position: relative;
    top: 100px;
-   right: 100px;
+   right: 50px;
+   box-sizing: border-box;
   }
 
   .container .card .card-content .firma h2.nombre{
     font-size: 1.4rem;
     text-align: left;  
-    margin: 20px 5px 20px 20px; 
+    margin-top: 20px; 
+    max-width: 150px;
+    width: 100%;
+    flex-basis: 35%;
   }
+  
 
   .container .card .card-content .firma .educacion{
     font-size: 1.4rem;
     color: var(--Grayish-Blue);
     margin: 20px 20px 20px 0;
+    max-width: 200px;
+    width:100%;
+    flex-basis: 65%;
   }
 
-  .container .card picture img{    
-    width: 70%;
-    margin: 50px 50px 50px 0; 
+  .container .card picture img{        
+    /* margin: 50px 50px 50px 0;  */
     flex-basis: 60%;    
     box-shadow: 0px 0px 30px -5px rgba(25,11,164,0.5);
   }
