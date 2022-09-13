@@ -45,8 +45,9 @@ body{
     flex-basis: 35%;
     background-image: url(../images/pattern-curve.svg);
     background-repeat: no-repeat;   
-    background-position: 0px 550px;
+    background-position: -30px 480px;
     background-size: contain;
+    padding: 0 0 0 30px;
   }
 
   .container .card .imagen{
@@ -68,6 +69,8 @@ body{
     width: 80%;
     border-radius: 5px;
     margin: 80px 80px 80px 0;
+    flex-basis: 60%;    
+    box-shadow: 0px 0px 30px -5px rgba(25,11,164,0.5);
   }
 
   .container .card .card-content .parrafo{
@@ -90,7 +93,6 @@ body{
 
   .container .card .card-content .firma{   
    display: flex;
-   /* max-width: 500px; */
    width: 350px;       
    position: relative;
    top: 100px;
@@ -115,12 +117,6 @@ body{
     max-width: 200px;
     width:100%;
     flex-basis: 65%;
-  }
-
-  .container .card picture img{        
-    /* margin: 50px 50px 50px 0;  */
-    flex-basis: 60%;    
-    box-shadow: 0px 0px 30px -5px rgba(25,11,164,0.5);
   }
 
   .toggler{
@@ -150,3 +146,86 @@ body{
     color: hsl(228, 45%, 44%);
   }
 /** ==================== FOOTER End ==================== */
+
+/*? ==================== RESPONSIVE Start ==================== */
+
+
+/** ==================== CONTAINER Start ==================== */
+  /*todo ==================== CARD Start ==================== */
+  @media(max-width: 754px) {
+    .container{
+      max-width: 754px;
+      width: 100%;
+    }
+    .container .card{
+      display: flex;
+      flex-direction: column-reverse;
+      background-size: 35rem;
+      background-position: 15px -5px;
+    }
+
+    .container .card .card-content{
+      flex-basis: none;
+      background-position-x: 0;
+      background-size: cover;
+      padding: 0;
+      background-position: -70px 270px;
+      background-size: 35rem;
+    }
+    .container .card .card-content .parrafo{
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 25px;
+      max-width: 375px;
+      width: 100%;
+      position: initial;
+      padding: 30px 10px 0 10px;
+      background-position: initial;
+      background-position-x: center;
+    }
+    .container .card .card-content .firma{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: initial;
+    }
+
+    .container .card .card-content .firma h2.nombre{
+      font-size: 1.8rem;
+      margin: 10px 10px 0 10px;
+      flex-basis: unset;
+      padding: 0;
+      position: initial;
+      width: 375px;
+      text-align: center;
+    }
+
+    .container .card .card-content .firma .educacion{
+      font-size: 1.8rem;
+      margin: 0;
+      flex-basis: unset;
+      max-width: 375px;
+      width: 100%;
+      padding-bottom: 100px;
+    }
+
+    .container .card .imagen picture{      
+      padding: 0 30px;
+    }
+
+    .container .card .imagen picture img{
+      flex-basis: unset;
+      width: 90%;    
+      margin:20px 20px 0 20px;
+    }
+    .toggler{
+      top: -20px;
+      left: 143px;
+    }
+  }
+  /*todo ==================== CARD End ==================== */
+/** ==================== CONTAINER End ==================== */
+
+/*? ==================== RESPONSIVE End ==================== */
