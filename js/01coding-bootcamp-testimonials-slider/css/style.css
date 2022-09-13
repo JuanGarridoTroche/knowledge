@@ -37,7 +37,7 @@ body{
     background-size: 65rem;    
   }
 
-  .container .card .card-content{
+  .container .card .card-content.active{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +48,10 @@ body{
     background-position: -30px 480px;
     background-size: contain;
     padding: 0 0 0 30px;
+  }
+
+  .container .card .card-content{
+    display: none;
   }
 
   .container .card .imagen{
@@ -66,6 +70,11 @@ body{
   }
 
   .container .card .imagen picture img{
+    display: none;
+  }
+
+  .container .card .imagen picture img.active{
+    display: block;
     width: 80%;
     border-radius: 5px;
     margin: 80px 80px 80px 0;
@@ -132,6 +141,10 @@ body{
   left: 90px;
 }
 
+.active{
+  display: block;
+}
+
   /*todo ==================== CARD End ==================== */
 
 /** ==================== CONTAINER End ==================== */
@@ -160,8 +173,8 @@ body{
     .container .card{
       display: flex;
       flex-direction: column-reverse;
-      background-size: 35rem;
-      background-position: 15px -5px;
+      background-size: 40rem;
+      background-position: -10px -35px;      
     }
 
     .container .card .card-content{
