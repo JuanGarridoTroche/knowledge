@@ -25,7 +25,7 @@ body{
     width: 100%;
     max-width: 1440px;
     padding: 15px;
-    margin: 15px;
+    margin: 30px;
   }
 
   .container .card{
@@ -33,7 +33,7 @@ body{
     flex-direction: row;
     background-image: url(../images/pattern-bg.svg);
     background-repeat: no-repeat;
-    background-position: 280px 10px;
+    background-position: 300px 10px;
     background-size: 65rem;    
   }
 
@@ -95,7 +95,7 @@ body{
     box-sizing: border-box;    
     background-image: url(../images/pattern-quotes.svg);
     background-repeat: no-repeat;
-    background-position: 70px 0px;
+    background-position: center 0;
     background-size: 7rem;
     padding-top: 20px;
   }
@@ -173,8 +173,8 @@ body{
     .container .card{
       display: flex;
       flex-direction: column-reverse;
-      background-size: 40rem;
-      background-position: -10px -35px;      
+      background-size: 35rem;
+      background-position: -30px 35px;      
     }
 
     .container .card .card-content{
@@ -189,7 +189,7 @@ body{
       text-align: center;
       font-size: 1.5rem;
       line-height: 25px;
-      max-width: 375px;
+      max-width: 900px;
       width: 100%;
       position: initial;
       padding: 30px 10px 0 10px;
@@ -211,7 +211,7 @@ body{
       flex-basis: unset;
       padding: 0;
       position: initial;
-      width: 375px;
+      width: 100%;
       text-align: center;
     }
 
@@ -219,7 +219,7 @@ body{
       font-size: 1.8rem;
       margin: 0;
       flex-basis: unset;
-      max-width: 375px;
+      max-width: 900px;
       width: 100%;
       padding-bottom: 100px;
     }
