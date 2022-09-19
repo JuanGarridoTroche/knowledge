@@ -23,7 +23,7 @@ body{
 }
 
 h1{
-  font-size: 9.2rem;
+  font-size: 6.7rem;
 }
 
 .cabecera{
@@ -103,13 +103,13 @@ padding-bottom: 40px;
   flex-basis: 50%;
   max-width: 720px;
   width: 100%;
-  padding: 15px 70px 0 50px;
+  padding: 15px 30px 0 50px;
 }
 
 .container .content p{
   line-height: 3rem;
   color: var(--medium-gray);
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .container .content button {
@@ -131,21 +131,25 @@ padding-bottom: 40px;
   font-weight: 700;
 } 
 
-.container .hero {
-  flex-basis: 50%;
-  /* background-image: url(../images/image-hero-desktop.png);
-  background-repeat: no-repeat;
-  background-size: contain;  */
-  max-width: 700px;
-  width: 100%;
-  max-height: 100px;
-  height: 100%;
+.container .content .client picture img{
+  padding: 20px 5px 20px 0;
 }
 
-.container .content .client .hero{
-  padding: 45px 15px 0 15px;
-  width: 100px;
-  height: 100px;
+.container .hero {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  margin-right: 20px;
+  padding-right: 20px;  
+  max-width: 695px;
+  max-height: 496px;
+  width: 695px;
+  height: 496px;
+}
+
+.container .hero img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 

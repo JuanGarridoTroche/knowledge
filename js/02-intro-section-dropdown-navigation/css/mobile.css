@@ -8,6 +8,12 @@
       align-items: center;
     }
 
+    .container .hero {
+      flex-basis: unset;
+      margin: 20px;
+      padding: 20px;
+    }
+
     .cabecera .hamburger {
       padding: 15px;
     }
