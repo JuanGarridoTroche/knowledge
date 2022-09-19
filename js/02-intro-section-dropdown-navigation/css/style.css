@@ -70,19 +70,19 @@ padding-bottom: 40px;
   box-shadow: 0 0 56px #a1a1a1;
   border-radius: 10px;
   line-height: 3rem;
-  text-align: left;
-  padding: 20px 0;
+  padding: 10px 0;
+  list-style: none;
 }
 
 .menu .inner-menu .company{
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   width: 150px;
   box-shadow: 0 0 56px #a1a1a1;
   border-radius: 10px;
-  line-height: 3rem;
-  text-align: left;
-  padding: 20px 0;
+  line-height: 3rem;  
+  padding: 10px 0;
+  list-style: none;
 }
 
 .access ul{
