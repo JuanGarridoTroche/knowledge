@@ -13,6 +13,7 @@
       margin: 0;
       padding: 0;
       max-width: 375px;
+      height: 300px;
     }
 
     .cabecera .hamburger {
@@ -25,9 +26,16 @@
       font-weight: 700;
     }
 
+    .cabecera{
+      padding-bottom: 0;
+    }
+
 
     .container .content{
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .container .content p{
@@ -35,6 +43,14 @@
     }
 
     .container .content button{
-      
+      width: 200px;
+      font-weight: 700;
+      height: 60px;
+      border-radius: 20px;
+      margin-bottom: 60px;
+    }
+
+    .container .content .client picture img{
+      padding: 0;
     }
 }
