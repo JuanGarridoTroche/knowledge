@@ -29,26 +29,38 @@ h1{
 .cabecera{
 display: flex;
 justify-content: space-between;
+padding-bottom: 40px;
 }
 
 .menu{
   display: flex;
   flex-basis: 75%;  
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .menu .logo{
   padding: 15px;
+  align-items: center;
 }
 
-.menu .menu-content ul{
+.menu .inner-menu ul{
   display: flex;
   list-style: none;
+  align-items: center;
   }
 
-.menu .menu-content ul li{
+.menu .inner-menu ul li{
   padding: 0 15px;
   text-decoration: none;
+  color: var(--medium-gray);
+  font-weight: 500;
+}
+
+.menu .inner-menu ul li:hover{
+  color: var(--almost-black);
+  font-weight: 700;  
+  cursor: pointer;
 }
 
 .access ul{
@@ -60,11 +72,23 @@ justify-content: space-between;
 
 .access ul li {
   padding: 15px 30px;
+  font-weight: 500;
+}
+
+.access ul li:hover{
+  color: var(--almost-black);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .access .register{
   border: 1px solid var(--medium-gray);
   border-radius: 15px;
+  cursor: pointer;
+}
+
+.access .register:hover{
+  border: 1px solid var(--almost-black);
 }
 
 .container {
@@ -79,11 +103,11 @@ justify-content: space-between;
   flex-basis: 50%;
   max-width: 720px;
   width: 100%;
-  padding: 15px 50px 15px 70px;
+  padding: 15px 70px 0 50px;
 }
 
 .container .content p{
-  line-height: 2.5rem;
+  line-height: 3rem;
   color: var(--medium-gray);
   font-size: 2.5rem;
 }
@@ -95,20 +119,28 @@ justify-content: space-between;
   border-radius: 10px;
   padding: 10px;
   margin: 25px 0;
-  width: 125px;
+  width: 225px;
   font-size: 1.8rem;
+  font-weight: 500;
 }
+
+.container .content button:hover{
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+  cursor: pointer;
+  font-weight: 700;
+} 
 
 .container .hero {
   flex-basis: 50%;
   background-image: url(../images/image-hero-desktop.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  right: 0px;
-  top: 50px;
+  background-size: contain; 
 }
 
+.container .content .client picture img{
+  padding: 45px 15px 0 15px;
+}
 
 
 
@@ -118,6 +150,7 @@ justify-content: space-between;
 .attribution {
   font-size: 11px; 
   text-align: center; 
+  margin-top: 100px;
 }
 
 .attribution a { 
