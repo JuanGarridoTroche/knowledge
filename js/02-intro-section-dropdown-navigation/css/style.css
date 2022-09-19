@@ -1,0 +1,125 @@
+:root{
+  /*? Colores neutros */
+--almost-white: hsl(0, 0%, 98%);
+--medium-gray: hsl(0, 0%, 41%);
+--almost-black: hsl(0, 0%, 8%);
+
+/*? Fuentes */
+--font-epilogue: 'Epilogue', sans-serif; /* peso de 500 y 700. tamaño: 18px*/
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.8rem;
+  font-family: var(--font-epilogue);
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 9.2rem;
+}
+
+.cabecera{
+display: flex;
+justify-content: space-between;
+}
+
+.menu{
+  display: flex;
+  flex-basis: 75%;  
+  flex-wrap: wrap;
+}
+
+.menu .logo{
+  padding: 15px;
+}
+
+.menu .menu-content ul{
+  display: flex;
+  list-style: none;
+  }
+
+.menu .menu-content ul li{
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.access ul{
+  flex-basis: 25%;
+  display: flex;  
+  list-style: none;
+  color: var(--medium-gray);
+}
+
+.access ul li {
+  padding: 15px 30px;
+}
+
+.access .register{
+  border: 1px solid var(--medium-gray);
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 100px;
+}
+
+.container .content {
+  flex-basis: 50%;
+  max-width: 720px;
+  width: 100%;
+  padding: 15px 50px 15px 70px;
+}
+
+.container .content p{
+  line-height: 2.5rem;
+  color: var(--medium-gray);
+  font-size: 2.5rem;
+}
+
+.container .content button {
+  text-decoration: none;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 25px 0;
+  width: 125px;
+  font-size: 1.8rem;
+}
+
+.container .hero {
+  flex-basis: 50%;
+  background-image: url(../images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 0px;
+  top: 50px;
+}
+
+
+
+
+
+/** FOOTER */
+
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
