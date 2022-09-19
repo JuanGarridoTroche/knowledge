@@ -63,6 +63,28 @@ padding-bottom: 40px;
   cursor: pointer;
 }
 
+.menu .inner-menu .features{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  box-shadow: 0 0 56px #a1a1a1;
+  border-radius: 10px;
+  line-height: 3rem;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.menu .inner-menu .company{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  box-shadow: 0 0 56px #a1a1a1;
+  border-radius: 10px;
+  line-height: 3rem;
+  text-align: left;
+  padding: 20px 0;
+}
+
 .access ul{
   flex-basis: 25%;
   display: flex;  
