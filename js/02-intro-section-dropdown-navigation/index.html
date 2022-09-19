@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
@@ -18,7 +19,7 @@
           <picture class="logo">
             <img src="images/logo.svg">
           </picture>
-          <nav class="inner-menu">
+          <nav class="inner-menu" hidden>
             <ul>
               <li>Features  <img src="images/icon-arrow-down.svg"></li>
               <li>Company  <img src="images/icon-arrow-down.svg"></li>
@@ -27,11 +28,14 @@
             </ul>    
           </nav>
         </div>
-        <div class="access">
+        <div class="access" hidden>          
           <ul>
             <li class="login">Login</li>
             <li class="register">Register</li>
           </ul>
+        </div>
+        <div class="hamburger">
+          <img src="images/icon-menu.svg" alt="">
         </div>
       </header>
       <div class="container">
@@ -53,7 +57,8 @@
           </div>
         </div>
         <picture class="hero">
-          <!-- <img src="images/image-hero-desktop.png" alt=""> -->
+          <source media="(max-width:721px)" srcset="images/image-hero-desktop.png">
+          <img src="images/image-hero-mobile.png" alt="">
         </picture>
       </div>
     </main>       

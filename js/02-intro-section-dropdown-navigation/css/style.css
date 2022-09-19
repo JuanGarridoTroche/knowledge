@@ -133,16 +133,20 @@ padding-bottom: 40px;
 
 .container .hero {
   flex-basis: 50%;
-  background-image: url(../images/image-hero-desktop.png);
+  /* background-image: url(../images/image-hero-desktop.png);
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;  */
+  max-width: 700px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
 }
 
-.container .content .client picture img{
+.container .content .client .hero{
   padding: 45px 15px 0 15px;
+  width: 100px;
+  height: 100px;
 }
-
-
 
 
 /** FOOTER */
