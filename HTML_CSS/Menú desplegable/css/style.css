@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: auto;
+  max-width: 500px;
+  width: 100%;
+  font-family: Roboto, san-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav li a {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block; 
+}
+
+.nav li a:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: wheat;
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav li ul {
+  display: none; /* Así desaparecen todos los submenús */
+  position: absolute; /* hacemos que no se deforme ni creazca el submenú*/
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0;
+}

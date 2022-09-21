@@ -48,7 +48,7 @@
       </div>
       <div class="nav-ul">
         <div class="dropdown">
-          <div class="dropbtn">Features<img src="./images/icon-arrow-up.svg" alt=""></div>
+          <a class="dropbtn">Features <img src="./images/icon-arrow-up.svg" alt=""></a>
         </div>
         <div class="dropdown-content">
           <a href="#"><img src="./images/icon-todo.svg" alt="Todo List">Todo List</a>
@@ -57,22 +57,21 @@
           <a href="#"><img src="./images/icon-planning.svg" alt="Planning">Planning</a>
         </div>
         <div class="dropdown">
-          <div class="dropbtn">
-            Company<img src="./images/icon-arrow-up.svg" alt="Arrow up">
-          </div>
+          <a class="dropbtn">
+            Company <img src="./images/icon-arrow-up.svg" alt="Arrow up">
+          </a>
           <div class="dropdown-content">
             <a href="#">History</a>
             <a href="#">Our Team</a>
             <a href="#">Blog</a>
           </div>
-        </div>
-
-        <a href="#">Careers</a>
-        <a href="#">About</a>
-        <div class="bav-btn">
-          <button>Login</button>
-          <button>Register</button>
-        </div>
+        </div> 
+        <a class="dropdown" href="#">Careers</a>
+        <a class="dropdown" href="#">About</a>       
+      </div>      
+      <div class="nav-btns">
+        <button>Login</button>
+        <button>Register</button>
       </div>
     </nav>
     <div class="hero">
@@ -80,7 +79,7 @@
         <h1>Make<br/> remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.</p>
-          <button>Learn More</button>
+          <button>Learn more</button>
           <div class="logos">
             <img src="./images/client-databiz.svg" alt="">
             <img src="./images/client-audiophile.svg" alt="">
@@ -89,8 +88,8 @@
           </div>
       </div>
       <picture class="img-container">        
-        <source media="(min-width:650px)" srcset="./images/image-hero-mobile.png">
-        <img src="./images/image-hero-desktop.png" alt="" id="hero-img">       
+        <source media="(min-width:650px)" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-mobile.png" alt="" id="hero-img">       
       </picture>
     </div>   
     
@@ -98,5 +97,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Juan Garrido Troche</a>.
     </div>
+    <script src="js/App.js"></script>
   </body>
 </html>
