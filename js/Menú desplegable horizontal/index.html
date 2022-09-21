@@ -13,26 +13,89 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <header>
-    <nav>
-      
+    <nav class="nav">
+      <picture class="brand">
+        <img src="./images/logo.svg" alt="Snap">
+      </picture>
+      <ul class="lista">
+        <li class="lista-item lista-item-click">
+          <div class="lista-img lista-img-click">            
+              <a href="#">
+                Features 
+                <img src="./images/icon-arrow-down.svg" alt="">
+              </a>                          
+          </div>
+          <ul class="lista-mostrar">
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                <img src="./images/icon-todo.svg" alt=""> Todo List
+              </a>
+            </li>
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                <img src="./images/icon-calendar.svg" alt=""> Calendar
+              </a>
+            </li>
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                <img src="./images/icon-reminders.svg" alt=""> Reminders
+              </a>
+            </li>
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                <img src="./images/icon-planning.svg" alt=""> Planning
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="lista-item lista-item-click">
+          <div class="lista-img lista-img-click">            
+              <a href="#">
+                Company                
+              </a>                          
+          </div>
+          <ul class="lista-mostrar">
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                History
+              </a>
+            </li>
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                Our Team
+              </a>
+            </li>
+            <li class="lista-submenu">
+              <a href="#" class="nav-enlace nav-enlace-submenu">
+                Blog
+              </a>
+            </li>            
+          </ul>
+        </li>      
+        <li class="lista-item">
+          <a href="#" class="nav-enlace">Careers</a>
+        </li>
+        <li class="lista-item">
+          <a href="#" class="nav-enlace">About</a>
+        </li>
+      </ul>
+      <ul class="acceso">
+        <li class="login">
+          <a href="#">Login</a>
+        </li>
+        <li class="registro">
+          <a href="#">Register</a>
+        </li>
+      </ul>
     </nav>
-  </header>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
+  <!-- Make remote work
 
   Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.
 
-  Learn more
+  Learn more -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
