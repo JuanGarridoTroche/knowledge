@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eaebef;
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  fill: pink;
+}
+
+.nav {
+  width: 300px;
+}
+
+.nav-link {
+  color: #303440;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.nav-link-inside {
+  border-radius: 6px;
+  padding-left: 20px;
+}
+
+.nav-link-inside:hover {
+  background-color: #f6f8fa;
+}
+
+.list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 16px 16px 0;
+  background-color: white;
+}
+
+.list-item {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list-item-click {
+  cursor: pointer;
+}
+
+.list-button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.arrow .list-arrow {
+  transform: rotate(90deg);
+}
+
+.list-arrow {
+  display: flex;
+  margin-left: auto; /* Hace que las flechas se queden peghadas en el margen derecho (truco de flexbox)*/
+  transition: transform .3s;
+}
+
+.list-show {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #303440;
+  list-style: none;
+  transition: height .4s;
+  height: 0;
+}
