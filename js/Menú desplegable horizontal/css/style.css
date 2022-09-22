@@ -118,6 +118,9 @@ body {
   height: 0;
 }
 
+
+
+
 /** ==================== ACCESO Start ==================== */
 .acceso {
   display: flex;
@@ -145,7 +148,6 @@ body {
   border: 1px solid var(--medium-gray);
   padding: 10px;
 }
-
 /** ==================== ACCESO End ==================== */
 
 
