@@ -40,6 +40,8 @@ body {
   display: block;
   padding: 15px 0;
   text-align: left;
+  text-decoration: none;
+  color: var(--medium-gray);
 }
 
 .nav-enlace-submenu {
@@ -79,7 +81,12 @@ body {
   align-items: center;
   gap: 1em;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto;  
+}
+
+.lista-img a{
+  text-decoration: none;
+  color: var(--medium-gray);
 }
 
 .arrow .lista-arrow {
