@@ -16,7 +16,6 @@ listaDeElementos.forEach(elemento => {
     }
 
     menu.style.height = `${height}px`;
-
     
   });
 });
