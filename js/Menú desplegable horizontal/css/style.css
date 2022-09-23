@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 25px;
   max-width: 1440px;
   width: 100%;
 }
@@ -44,14 +44,15 @@ body {
 
 .nav-enlace {
   display: block;
-  padding: 20px 0;
+  padding: 10px 25px;
   text-align: left;
   text-decoration: none;
   color: var(--medium-gray);
+  border-radius: 10px;
 }
 
 .nav-enlace-submenu {   
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   text-align: left;  
   background-color: white;
 }
@@ -78,7 +79,7 @@ body {
 
 .lista-item {
   list-style: none;
-  width: 100%;
+  width: 20%;
   text-align: center;
   overflow: hidden;
 }
@@ -89,7 +90,8 @@ body {
 .lista-img {
   display: flex;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  padding: 10px;  
 }
 
 .lista-img a{
