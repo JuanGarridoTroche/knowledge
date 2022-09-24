@@ -26,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--almost-white);
+  font-family: var(--font-epilogue);
 }
 
 .nav {
