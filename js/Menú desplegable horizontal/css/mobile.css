@@ -1,6 +1,26 @@
-@media(max-width: 650px) {
+@media(max-width: 894px) {
+  .lista {    
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    max-width: 100vw;
+    width: 70%;
+    height: 100vh;
+  }
+
   .lista-item {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 100px;
+    /* left: 150px; */
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    /* align-items: left; */
+    text-align: left;
+    overflow: unset;
+    padding-left: 15px;
   }
 
   .acceso {
@@ -8,7 +28,13 @@
   }
 
   .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+.icon-close-menu {
     display: block;
+    cursor: pointer;
   }
 }
 

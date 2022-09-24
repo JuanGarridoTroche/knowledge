@@ -52,7 +52,7 @@ body {
 
 .nav-enlace-submenu {     
   text-align: left;  
-  margin-top: 15px;
+  margin-top: 15px;  
 }
 
 .nav-enlace-submenu:hover {
@@ -114,6 +114,10 @@ body {
   box-shadow: 5px 20px 25px 2px rgba(0,0,0,0.7);
   border-radius: 10px;
   margin-top: 10px; 
+}
+
+.lista-submenu:last-child {
+  padding-bottom: 20px;
 }
 
 /** ==================== ACCESO Start ==================== */
