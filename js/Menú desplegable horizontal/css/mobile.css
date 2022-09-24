@@ -36,6 +36,7 @@
     text-align: left;
     overflow: unset;
     padding-left: 15px;
+    z-index: 2;
   }
 
   .acceso {
@@ -52,7 +53,8 @@
   }
 
   .acceso li {  
-    padding: 15px;    
+    padding: 15px;  
+    cursor: pointer;
   }
 
   .acceso .registro a {
