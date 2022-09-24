@@ -10,7 +10,10 @@
   }
 
   .lista-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
     top: 100px;
     /* left: 150px; */
