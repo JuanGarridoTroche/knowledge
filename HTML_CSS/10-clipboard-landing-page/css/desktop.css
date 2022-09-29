@@ -1,0 +1,31 @@
+@media(min-width: 920px) {
+  .section-content .botones {
+    display: unset;
+  }
+
+  .section-content.computer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-content.computer h3, .section-content.computer p {
+    text-align: left;
+  }
+
+  .section-content.workflow, .section-content.enterprises {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer .section-footer {
+    display: grid;
+    
+  }
+
+}
