@@ -1,0 +1,1 @@
+En la carpeta public/views guardaremos las vistas de nuestra aplicación. Vamos a dividir nuestros HTMLs en múltiples archivos para que nuestra aplicación pueda ir creando la página según su estructura.
