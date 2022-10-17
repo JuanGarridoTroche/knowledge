@@ -99,6 +99,114 @@ header .header-img{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-weight: 500;
 }
 
 /** ===============  FOOTER End  =============== */
+
+
+
+/*! ===============  DESIGN DESKTOP  =============== */
+
+@media(min-width: 800px) {
+  /** =============== HEADER Start =============== */  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+  }
+  
+  .header-img .hamburger {
+    display: none;
+  }
+  .header-menu {
+    display: flex;
+  }
+
+  .header-menu .header-container{
+    display: flex;
+    justify-content: space-around;    
+  }
+  .header-menu .header-container .header-content {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-texto);
+    padding: 0 2rem;
+  }
+
+  .header-menu .header-container .header-content > ul {
+    display: none;
+  }
+
+  .header-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 50%;
+  }
+
+  .header-login > a:last-child{    
+    border: 1px solid var(--color-texto);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+/** ===============  HEADER End  =============== */
+/** ===============  MAIN Start =============== */
+.main-container {
+  flex-direction: row;
+  text-align: left;
+  height: 90vh;
+  margin: 1rem 17rem;
+}
+
+.img-hero img{  
+  padding-left: 5rem;
+}
+
+.article-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 5rem;
+  min-height: 70vh;
+}
+
+.article-container h1 {
+  font-size: 5rem;
+  color: var(--color-texto-titulares);
+}
+
+.article-container p {
+  color: var(--color-texto);
+  line-height: 3rem;
+  margin-bottom: 4rem;
+}
+
+.article-container > a {
+  background-color: var(--color-texto-titulares);
+  padding: 2rem;
+  border-radius: 15px;
+  color: var(--color-back);
+  text-decoration: none;
+}
+
+.article-container > .brands {
+  margin-top: 6rem;
+}
+
+.article-container > .brands img {
+  padding: 0 .5rem;
+  width: 24%;
+
+}
+
+/** ===============  MAIN End   =============== */
+
+}
