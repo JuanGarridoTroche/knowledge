@@ -136,10 +136,26 @@ header .header-img{
     text-decoration: none;
     color: var(--color-texto);
     padding: 0 2rem;
+    cursor: pointer;
   }
 
   .header-menu .header-container .header-content > ul {
     display: none;
+  }
+
+  .header-menu .header-container .header-content .dropdown::after {
+    content: url('../images/icon-arrow-down.svg');
+  }
+
+  .header-menu .header-container .header-content .dropdown {    
+    /* position: absolute; */
+  }
+
+  .header-menu .header-container .header-content .dropdown ul{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    position: sticky;
   }
 
   .header-login {
@@ -160,12 +176,14 @@ header .header-img{
 .main-container {
   flex-direction: row;
   text-align: left;
-  height: 90vh;
-  margin: 1rem 17rem;
+  height: 85vh;
+  margin: 1rem 15rem;
 }
 
 .img-hero img{  
   padding-left: 5rem;
+  min-height: 85vh;
+  height: 100%;
 }
 
 .article-container {
@@ -204,7 +222,6 @@ header .header-img{
 .article-container > .brands img {
   padding: 0 .5rem;
   width: 24%;
-
 }
 
 /** ===============  MAIN End   =============== */
