@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+  --fuente-web: 'Epilogue', sans-serif; /* Pesos de 500 y 700 */
+  --color-back: hsl(0, 0%, 98%); /* Almost White*/
+  --color-texto: hsl(0, 0%, 41%); /* Medium gray */
+  --color-texto-titulares: hsl(0, 0%, 8%); /* Almost black */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--fuente-web);
+  background-color: var(--color-back);
+}
+
+
+/** =============== HEADER Start =============== */
+header .header-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-login {
+  display: none;
+}
+/** ===============  HEADER End  =============== */
+
+/** ===============  MAIN Start =============== */
+.main-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-hero img{  
+  max-width: 100%;
+  /* max-height: 100%; */
+  object-fit: scale-down;
+}
+
+.article-container {
+  padding: 2rem;
+}
+
+.article-container h1 {
+  font-size: 3.8rem;
+  color: var(--color-texto-titulares);
+}
+
+.article-container p {
+  color: var(--color-texto);
+  line-height: 3rem;
+  margin-bottom: 4rem;
+}
+
+.article-container > a {
+  background-color: var(--color-texto-titulares);
+  padding: 2rem;
+  border-radius: 15px;
+  color: var(--color-back);
+  text-decoration: none;
+}
+
+.article-container > .brands {
+  margin-top: 6rem;
+}
+
+.article-container > .brands img {
+  padding: 0 .5rem;
+  width: 24%;
+
+}
+
+/** ===============  MAIN End   =============== */
+
+/** =============== FOOTER Start =============== */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/** ===============  FOOTER End  =============== */

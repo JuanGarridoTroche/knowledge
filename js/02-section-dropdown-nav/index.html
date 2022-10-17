@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header>
+    <picture class="header-img">
+      <img src="./images/logo.svg" alt="Logo">
+      <img src="./images/icon-menu.svg" alt="Menu">
+    </picture>
+    <nav class="header-menu">
+      <ul class="header-container">
+        <li class="header-content">
+          Feature
+          <ul>
+            <li>Todo List</li>
+            <li>Calendar</li>
+            <li>Reminders</li>
+            <li>Planning</li>
+          </ul>
+        </li>
+        <li class="header-content">
+          Company
+          <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li class="header-content">Careers</li>
+        <li class="header-content">About</li>
+      </ul>
+    </nav>
+    <div class="header-login">
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
+  </header>
+  <main class="main-container">
+    <article class="article-container">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a href="#">Learn more</a>
+      <div class="brands">
+        <img src="./images/client-databiz.svg" alt="Databiz">
+        <img src="./images/client-audiophile.svg" alt="Audio phile">
+        <img src="./images/client-meet.svg" alt="Meet">
+        <img src="./images/client-maker.svg" alt="maker">
+      </div>
+    </article>
+    <picture class="img-hero">
+      <source media="(min-width:800px)" srcset="./images/image-hero-desktop.png">
+      <img src="./images/image-hero-mobile.png" alt="Hero">
+    </picture>
+  </main>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Juan Garrido Troche</a>.
+  </footer>
 </body>
+
 </html>
