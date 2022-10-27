@@ -33,7 +33,41 @@ header .header-img{
 }
 
 .header-menu {
-  display: none;
+  display: block;
+}
+
+.header-menu > .header-container {
+  position: fixed;
+  right: 0%;
+  top: 50px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--color-back);
+  width: 65%;   
+  text-align: center;
+  transition: .3s;
+  list-style: none;
+}
+
+.header-menu > .header-container > .header-content {
+  margin: 1.6rem 0;
+
+}
+
+.header-menu > .header-container > .header-content.active {
+  left: 0;
+}
+
+.header-menu > .header-container > .header-content a{
+  text-decoration: none;
+  color: var(--color-texto);
+}
+
+/* .header-menu > .header-container > .header-content li {
+  list-style: none;
+} */
+
+.hamburger.active {
 }
 
 .header-login {
@@ -77,6 +111,12 @@ header .header-img{
   border-radius: 15px;
   color: var(--color-back);
   text-decoration: none;
+}
+
+.article-container > a:hover {
+  background-color: var(--color-back);
+  color: var(--color-texto-titulares);
+  border: 1px solid var(--color-texto-titulares);
 }
 
 .article-container > .brands {
@@ -148,7 +188,8 @@ header .header-img{
   }
 
   .header-menu .header-container .header-content .dropdown {    
-    /* position: absolute; */
+    padding-right: 0px;
+    margin-right: 0px;
   }
 
   .header-menu .header-container .header-content .dropdown ul{
