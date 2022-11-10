@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;  
+}
+
+header {
+  background-color: rgb(200, 200, 200);
+  display: flex;  
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: left; ;
+}
+
+header > nav > ul > li {
+  list-style-type: none;  
+  display: flex;
+  padding: 0 5px;
+  font-size: 2rem;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+header > nav > ul > li > a:hover {
+  color: rgb(94, 92, 92);
+}
+
+header > img {
+  width: 6%;
+}
+
+.hamburger {
+  background-color: black;
+}
+
+.hamburger .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #0e2431;
+}  
