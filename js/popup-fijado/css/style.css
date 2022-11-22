@@ -55,7 +55,7 @@
   cursor: pointer;
 } 
 
-footer {
+/* footer {
   height: 58px;
   background-color: #045089;
   opacity: .4;
@@ -63,7 +63,7 @@ footer {
   bottom: 0;
   right: 0; 
   left: 0;
-}
+} */
 
 /* ANIMACIONES */
 @keyframes ejemplo {
