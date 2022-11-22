@@ -1,11 +1,41 @@
 
+let AbrirPopupAna = document.getElementById("ana"), AbrirPopupNiky = document.getElementById("niky"), AbrirPopupJuan = document.getElementById("juan"),
+	overlay = document.getElementById('overlay'),
+	popup = document.getElementById('popup'),
+  h3 = document.getElementById('nombre'),
+  h4 = document.getElementById('cargo'),
+  texto = document.getElementById('texto'),
+	CerrarPopup = document.getElementById('btn-cerrar-popup');
 
-const anaAvatar = document.querySelector("#ana");
-const nikyAvatar = document.querySelector("#niky");
-const juanAvatar = document.querySelector("#juan");
+AbrirPopupAna.addEventListener('click', function(){
+	overlay.classList.add('active');
+	popup.classList.add('active');
+  console.log(AbrirPopupAna);
+  h3.innerHTML = "Ana Arévano";
+  h4.innerHTML = "Alumna de Hackaboss, promoción JSB14CO"
+  texto.innerHTML ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit distinctio deleniti iste error. Quo ad aperiam facere corporis eius officiis suscipit odit deleniti reprehenderit, autem magni neque! Explicabo, consectetur!"
+});
 
-console.log(juanAvatar);
+AbrirPopupNiky.addEventListener('click', function(){
+	overlay.classList.add('active');
+	popup.classList.add('active');
+  console.log(AbrirPopupAna);
+  h3.innerHTML = " Muchika Chettakul";
+  h4.innerHTML = "Alumna de Hackaboss, promoción JSB14CO"
+  texto.innerHTML ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit distinctio deleniti iste error. Quo ad aperiam facere corporis eius officiis suscipit odit deleniti reprehenderit, autem magni neque! Explicabo, consectetur!"
+});
 
-juanAvatar.addEventListener("click", ()=> {
-  console.log("Juan Garrido Troche");
+AbrirPopupJuan.addEventListener('click', function(){
+	overlay.classList.add('active');
+	popup.classList.add('active');
+  console.log(AbrirPopupAna);
+  h3.innerHTML = "Juan Garrido Troche";
+  h4.innerHTML = "Alumno de Hackaboss, promoción JSB14CO"
+  texto.innerHTML ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit distinctio deleniti iste error. Quo ad aperiam facere corporis eius officiis suscipit odit deleniti reprehenderit, autem magni neque! Explicabo, consectetur!"
+});
+
+CerrarPopup.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay.classList.remove('active');
+	popup.classList.remove('active');
 });
