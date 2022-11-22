@@ -1,0 +1,77 @@
+:root {
+  --ribbon-color: #045089;
+  --ribbon-color-hover: #2588d4;
+}
+
+.bookmarkRibbon {
+  width: 5%;
+  height: 0;
+  border-bottom: 30px solid var(--ribbon-color);
+  border-top: 30px solid var(--ribbon-color);
+  border-right: 15px solid transparent;
+  float: right;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+  opacity: .6;;
+}
+
+.bookmarkRibbon > ul {
+  color: rgb(250, 250, 250);
+  position: relative;
+  bottom: 35px;
+  text-align: center;
+  left: -30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bookmarkRibbon:hover {
+  border-bottom: 32px solid var(--ribbon-color-hover);
+  border-top: 32px solid var(--ribbon-color-hover);
+  opacity: 1;
+  color: white;
+  animation-name: ejemplo;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  
+  /* content: 'Quienes somos'; */
+  
+}
+
+.bookmarkRibbon > ul > .avatar {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/ana.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% auto;
+  border-radius: 50%;
+  cursor: pointer;
+} 
+
+footer {
+  height: 58px;
+  background-color: #045089;
+  opacity: .4;
+  position: fixed;
+  bottom: 0;
+  right: 0; 
+  left: 0;
+}
+
+/* ANIMACIONES */
+@keyframes ejemplo {
+  from {
+    width: 125px;
+    background-color: var(--ribbon-color);}
+  to {
+    width: 99vw;
+    background-color: var(--ribbon-color-hover);
+  }
+}
