@@ -1,0 +1,23 @@
+
+
+
+input {
+  margin: 10px;
+}
+
+body {
+  height: 100vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(153, 205, 206);
+
+}
