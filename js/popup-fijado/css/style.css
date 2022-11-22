@@ -13,19 +13,19 @@ body {
 }
 
 .bookmarkRibbon {
-  width: 100px;
+  width: 85px;
   height: 0;
   border-bottom: 30px solid var(--ribbon-color);
   border-top: 30px solid var(--ribbon-color);
   border-right: 15px solid transparent;
   float: right;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   font-size: 1.6rem;
   font-weight: 700;
   position: absolute;
   left: 0px;
-  bottom: 40px;
-  opacity: .6;;
+  bottom: 0px;
+  opacity: .8;;
 }
 
 .bookmarkRibbon > ul {
