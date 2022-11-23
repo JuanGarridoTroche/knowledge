@@ -1,6 +1,14 @@
 :root {
   --ribbon-color: #045089;
   --ribbon-color-hover: #2588d4;
+  
+  /* Paleta de colores */
+  --color-navy: rgb(41, 52, 98);
+  --color-mint: rgb(28, 214, 206);
+  --color-yellow: rgb(254, 219, 57);
+  --color-red: rgb(214, 28, 78);
+  --color-back-card: rgb(211, 211, 211);
+  --font-p2p: 'Press Start 2P', cursive;
 }
 
 html {
@@ -10,6 +18,7 @@ html {
 body {
   font-size: 1.6rem;
   overflow-x: hidden;
+  background: linear-gradient(to left, var(--color-mint), var(--color-navy));
 }
 
 .bookmarkRibbon {
@@ -85,7 +94,7 @@ body {
 /* ------------------------- */
 
 .overlay {
-	background: rgba(0,0,0,.3);
+	/* background: rgba(0,0,0,.3); */
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -102,13 +111,15 @@ body {
 }
 
 .popup {
-	background: #F8F8F8;
-	box-shadow: 30px 30px 55px 0px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(28, 214, 206, 0.37);
+  backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	text-align: center;
 	width: 450px;	
-  border-radius: 10px;
 	transition: .3s ease all;
 	transform: scale(0.7);  
 	/* opacity: 0; */
