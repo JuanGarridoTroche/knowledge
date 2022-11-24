@@ -11,9 +11,6 @@ let AbrirPopupAna = document.getElementById("ana"),
   avatar = document.getElementsByClassName("avatar");
 	CerrarPopup = document.getElementById('btn-cerrar-popup');
 
-  
-
-
 AbrirPopupAna.addEventListener('click', function(){
 	overlay.classList.add('active');
 	popup.classList.add('active');
