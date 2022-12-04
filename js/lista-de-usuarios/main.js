@@ -1,28 +1,70 @@
-const contactBox = document.querySelector('#contactBox');
-const loadUsersBox = document.querySelector('#loadUsersBox');
-const loadUsersBtn = document.querySelector('#loadUsersBtn');
+const contactBox = document.querySelector("#contactBox");
+const loadUsersBox = document.querySelector("#loadUsersBox");
+const loadUsersBtn = document.querySelector("#loadUsersBtn");
 
-const usersNumber = document.querySelector('#usersNumber');
+const usersNumber = document.querySelector("#usersNumber");
 
-const userList = document.querySelector('#userList');
-const cardSkeleton = document.querySelector('#cardSkeleton');
+const userList = document.querySelector("#userList");
+const cardSkeleton = document.querySelector("#cardSkeleton");
 
-const cardTemplate = document.querySelector('#cardTemplate');
+const cardTemplate = document.querySelector("#cardTemplate");
 
-loadUsersBtn.addEventListener('click', getUsersData);
+loadUsersBtn.addEventListener("click", getUsersData);
+userList.addEventListener("click", filterEventByButtonClicked);
+
+function filterEventByButtonClicked(e) {
+  if (e.target.className.includes("cardBtn")) {
+    // console.log(e.target);
+    const parentNode = e.target.parentNode;
+    const user = JSON.parse(parentNode.getAttribute("data-user"));
+    // console.log({ user });
+    showModalWithUserData(user);
+  }
+};
+
+
+//Creamos un modal para mostrar el email del usuario
+function showModalWithUserData(user) {
+  const { id, avatar, email, first_name, last_name } = user;
+  Swal.fire({
+    titleText: `#${id} - ${first_name} ${last_name}}`,
+    text: `${email}`,
+    imageUrl: `${avatar}`,
+    imageWidth: 200,
+    imageHeigth: 200,
+    imageAlt: `Avatar de: ${first_name}`,
+    confirmButtonColor: '#9EDEFD',    
+  });
+}
 
 function getUsersData() {
+  toggleContactBox();
+  printSkeleton(6);
   asyncFetching()
-  .then((data) => {
-    // console.log(data);    
-    toggleContactBox();
-    printNumberOfUsers(data);
-    printSkeleton(data);
-    userList.innerHTML = '';
-    printUserData(data);
-  })
-  .catch((error) => {
-    console.error(error);
+    .then((data) => {
+      // console.log(data);
+      printNumberOfUsers(data);
+      userList.innerHTML = "";
+      printUserData(data);
+    })
+    .catch((error) => {
+      console.error(error);
+      showToastWithError(error);
+    });
+};
+
+function showToastWithError(error)
+ {
+  const toast = Swal.mixin({
+    toast: true,
+    position: 'bottom',
+    iconColor: 'white',
+    customClass: {
+      popup: 'colored-toast',
+    },
+    showConfirmButton: false,
+    timer: 2500,
+    timerProgressBar: true,
   });
 };
 
@@ -36,24 +78,29 @@ function printUserData(data) {
     last_name: "Bluth"
   } 
   */
-  data.forEach(user => {
-    const {avatar, email, first_name, id, last_name} = user;
+  data.forEach((user) => {
+    const { avatar, email, first_name, last_name } = user;
     // console.log(user.email);
     const cardContent = cardTemplate.content.cloneNode(true);
-    const avatarImg = cardContent.querySelector('#avatarImg');
+
+    cardContent
+      .querySelector("div")
+      .setAttribute("data-user", JSON.stringify(user));
+    const avatarImg = cardContent.querySelector("#avatarImg");
     avatarImg.src = avatar;
 
-    const firstName = cardContent.querySelector('#firstName');
+    const firstName = cardContent.querySelector("#firstName");
     firstName.textContent = first_name;
-    const lastName = cardContent.querySelector('#lastName');
+    const lastName = cardContent.querySelector("#lastName");
     lastName.textContent = last_name;
 
     userList.appendChild(cardContent);
-  })
+  });
 }
 
-function printSkeleton(data) {
-  data.forEach(user => {
+function printSkeleton(numberOfSkeleton) {
+  const skeletonArray = [...Array(numberOfSkeleton).keys()];
+  skeletonArray.forEach((user) => {
     const skeletonContent = cardSkeleton.content.cloneNode(true);
     userList.appendChild(skeletonContent);
   });
@@ -65,8 +112,8 @@ function printNumberOfUsers(data) {
 }
 
 function toggleContactBox() {
-  contactBox.classList.toggle('hidden');
-  loadUsersBox.classList.toggle('hidden');
+  contactBox.classList.toggle("hidden");
+  loadUsersBox.classList.toggle("hidden");
 }
 
 //Usaremos una API-REST req-res (https://reqres.in). Podemos hacer pruebas con listas de usuarios fake que nos entrega esta API en vez de perder tiempo creándolos uno mismo.
@@ -77,15 +124,14 @@ fetch('https://reqres.in/api/users')
   .then((data) => console.log(data));
 */
 //
-const asyncFetching = async() => {
+const asyncFetching = async () => {
   //En la URL le añadimos un delay de 2s para que le de tiempo a comprobar si tiene que cargar el skeleton (0 usuarios) o los usuarios. Si no lo queremos añadir solo tenemos que eliminar de la URL "?delay=2"
-  const response = await fetch('https://reqres.in/api/users?delay=2');
-  if (response.status!==200) {
-    throw new Error('Incapaz de obtener datos 😿')
+  const response = await fetch("https://reqres.in/api/users?delay=2");
+  if (response.status !== 200) {
+    throw new Error("Incapaz de obtener datos 😿");
   }
   const { data, ...rest } = await response.json();
   // console.log(rest);
   console.log(data);
   return data;
-}
-
+};
