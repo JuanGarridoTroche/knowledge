@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+  <script defer src="./main.js"></script>
+  <link rel="stylesheet" href="./assets/index.75bc6bbd.css">
+
+  <title>Lista de usuarios</title>
+</head>
+
+<body>
+  <div class="container p-8 mx-auto">
+    <div id="contactBox" class="hidden">
+      <div id="usersContainer" class="flex flex-col gap-2 mt-8">
+        <h1 class="text-2xl font-semibold">Lista de usuarios</h1>
+        <h2 class="text-lg font-normal text-gray-400"><span id="usersNumber" class="text-sky-300">0</span> Usuarios ahora mismo
+        </h2>
+        <div id="userList" class="flex flex-col gap-2 mt-8"></div>
+      </div>
+    </div>
+    <div id="loadUsersBox" class="flex flex-col items-center min-h-[90vh] justify-center gap-8">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-sky-300" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
+      </svg>
+      <div class="flex flex-col items-center justify-center gap-8">
+        <div class="flex flex-col items-center justify-center gap-2">
+          <h3 class="text-xl font-semibold">Información del contacto</h3>
+          <p class="text-center text-gray-400">Ten a todos tus usuarios en tu aplicación, y envíales emails fácilmente.</p>
+        </div>
+        <button id="loadUsersBtn"
+          class="flex items-center px-6 py-2 text-white transition-all duration-300 rounded-full shadow-md bg-sky-300 hover:bg-sky-500">Cargar usuarios</button>
+      </div>
+    </div>
+  </div>
+
+  <template id="cardTemplate">
+    <div
+      class="flex items-center gap-8 p-2 py-4 transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-sky-100 rounded-xl">
+      <!-- avatar -->
+      <img id="avatarImg" class="object-cover w-16 h-16 rounded-full drop-shadow-md"
+        src="https://reqres.in/img/faces/1-image.jpg" alt="XXX">
+      <!-- name -->
+      <div>
+        <p id="firstName" class="text-lg ">George</p>
+        <!-- surname -->
+        <p id="lastName" class="text-sm text-gray-400 ">Bluth</p>
+      </div>
+      <!-- button to flip and show email -->
+      <button class="ml-auto cardBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 pointer-events-none text-sky-300" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+        </svg>
+      </button>
+    </div>
+  </template>
+  <template id="cardSkeleton">
+    <div
+      class="animate-pulse border flex items-center gap-8 p-2 py-4 transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-sky-100 rounded-xl">
+      <div class="bg-gray-300 w-16 h-16 rounded-full drop-shadow-md"></div>
+      <div class="flex flex-col gap-2">
+        <p class="bg-gray-300 w-20 h-6 rounded-md"></p>
+        <p class="bg-gray-300 w-10 h-6 rounded-md"></p>
+      </div>
+      <div class="ml-auto w-6 h-6 bg-gray-300 rounded-md">
+      </div>
+    </div>
+  </template>
+
+
+</body>
+
+</html>
