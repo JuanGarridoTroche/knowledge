@@ -2,17 +2,36 @@ const contactBox = document.querySelector('#contactBox');
 const loadUsersBox = document.querySelector('#loadUsersBox');
 const loadUsersBtn = document.querySelector('#loadUsersBtn');
 
+const usersNumber = document.querySelector('#usersNumber');
+
+const userList = document.querySelector('#userList');
+const cardSkeleton = document.querySelector('#cardSkeleton');
+
 loadUsersBtn.addEventListener('click', getUsersData);
 
 function getUsersData() {
   asyncFetching()
   .then((data) => {
-    console.log(data);    
+    // console.log(data);    
     toggleContactBox();
+    printNumberOfUsers(data);
+    printSkeleton(data);
   })
   .catch((error) => {
     console.error(error);
   });
+}
+
+function printSkeleton(data) {
+  data.forEach(user => {
+    const skeletonContent = cardSkeleton.content.cloneNode(true);
+    userList.appendChild(skeletonContent);
+  });
+}
+
+//Imprime el número de usuarios
+function printNumberOfUsers(data) {
+  usersNumber.innerHTML = `${data.length}`;
 }
 
 function toggleContactBox() {
@@ -34,7 +53,7 @@ const asyncFetching = async() => {
     throw new Error('Incapaz de obtener datos 😿')
   }
   const { data, ...rest } = await response.json();
-  console.log(rest);
+  // console.log(rest);
   console.log(data);
   return data;
 }
