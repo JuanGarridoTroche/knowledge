@@ -66,6 +66,10 @@ function showToastWithError(error)
     timer: 2500,
     timerProgressBar: true,
   });
+  toast.fire({
+    icon: 'error',
+    title: `${error}`,
+  });
 };
 
 function printUserData(data) {
