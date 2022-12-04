@@ -5,8 +5,14 @@ const loadUsersBtn = document.querySelector('#loadUsersBtn');
 loadUsersBtn.addEventListener('click', getUsersData);
 
 function getUsersData() {
-  toggleContactBox();
-  asyncFetching();
+  asyncFetching()
+  .then((data) => {
+    console.log(data);    
+    toggleContactBox();
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 }
 
 function toggleContactBox() {
