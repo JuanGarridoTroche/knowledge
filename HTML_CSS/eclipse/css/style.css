@@ -1,0 +1,28 @@
+
+
+body {
+  background-color: black;
+  margin: auto 0;
+}
+
+.a {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.b {
+  width: 150px;
+  height: 150px;
+  background-color: red; /* después de pruebas, poner en black */
+  border-radius: 50%;
+  position: absolute;
+  top: 390px;
+}
