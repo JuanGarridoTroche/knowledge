@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #EDE9E7;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: hidden; /* Todo lo que está fuera de los 1000px de ancho, se oculta ya que todas las imágenes están mostradas en una misma fila */
+}
