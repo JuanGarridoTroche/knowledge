@@ -1,14 +1,18 @@
 import React from "react";
-import { Titulo } from "./components/css/Titulo";
-import SlideShow from "./components/Slideshow";
+import Carousel from "./components/Carousel";
+// import { Titulo } from "./components/css/Titulo";
+// import SlideShow from "./components/Slideshow";
 
 
 function App() {
   return (
+    <>
     <main>
-      <Titulo>productos destacados</Titulo>
-      <SlideShow />
+      {/* <Titulo>productos destacados</Titulo> */}
+      {/* <SlideShow /> */}
+      <Carousel/>
     </main>
+    </>
   );
 }
 

@@ -1,0 +1,19 @@
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 13px 1px rgba(255, 255, 255, .9);
+  text-align: center;
+  color: #101010;
+  margin-top: 285px;
+  width: 100%;
+}
