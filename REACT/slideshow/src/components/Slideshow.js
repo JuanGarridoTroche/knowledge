@@ -11,11 +11,50 @@ import { TextoSlide } from "./css/TextoSlide"
 import { Slide } from "./css/Slide";
 import { Controles } from "./css/Controles";
 import { Boton } from "./css/Boton";
+import { useRef } from "react";
+
+
 
 const SlideShow = () => {
+  const slideShow =useRef(null);
+  const next = ()=> {
+    
+    if(slideShow.current.children.length > 0) {
+
+      //Obtenemos el primer elemento de las imágenes
+      const firstElement = slideShow.current.children[0];
+
+      //Establecemos la transición para el slideShow
+      slideShow.current.style.transition = `300ms ease-out all`;
+      
+      //Buscamos el width de la imagen para moverla
+      const slideWidth = slideShow.current.children[0].offsetWidth;
+
+      //Movemos el slideShow
+      slideShow.current.style.transform = `translateX(${slideWidth}px)`;
+
+      const transition = () => {
+        //Reiniciamos la posición del slideShow
+        slideShow.current.style.transition = 'none';
+        slideShow.current.style.transform = 'translateX(0)';    
+        
+        //Tomamos el 1º elemento y lo enviamos al final
+        slideShow.current.appendChild(firstElement);
+      }
+
+      //Event Listener para cuando termine la animación
+      slideShow.current.addEventListener('transitioned', transition);
+
+    };
+  }
+  
+  const previous = ()=> {
+    console.log('Anterior');
+    console.log(slideShow.current);
+  }
   return (
     <ContenedorPrincipal>
-      <ContenedorSlideshow>
+      <ContenedorSlideshow ref={slideShow}>
         <Slide>
           <a href="http://www.darthvader.es">
             <img src={img1} alt="img1" />
@@ -42,10 +81,10 @@ const SlideShow = () => {
         </Slide>
       </ContenedorSlideshow>
       <Controles>
-        <Boton>
+        <Boton onClick={previous}>
           <FlechaIzqda />
         </Boton>
-        <Boton derecho>
+        <Boton derecho onClick={next}>
           <FlechaDcha />
         </Boton>
       </Controles>
