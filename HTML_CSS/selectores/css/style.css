@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(33,45,57);
+  font-size: 1.6rem;
+  color: white;
+}
+
+body > section {
+  display: flex;
+  margin-bottom: 50px;
+
+}
+
+body > section > div {
+  display: flex;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(93,209,200);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: rgb(28,46,59);
+}
+
+/*  Primer ejemplo: Selector para todos sus descendientes tipo p*/
+body > .descent-selector > div p {
+  background-color: white;
+}
+
+ /* Segundo ejemplo: Selector para todos los descendientes directos tipo p*/
+body > .child-selector > div > p {
+  background-color: white;
+}
+
+ /* Tercero ejemplo: Selector para todos los hermanos adyacentes tipo p */
+ body > .sibling-selector > div + p {
+  background-color: white;
+}
+
+/* Cuarto ejemplo: Selector para todos los hermanos tipo p */
+body > .general-sibling-selector > div ~ p {
+  background-color: white;
+}
