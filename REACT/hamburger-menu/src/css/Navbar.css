@@ -31,7 +31,7 @@
   transform: translateX(0);
 }
 
-.nav-items a {
+.nav-items > li > a {
   position: relative;
   margin: 15px;
   color: white;
@@ -77,10 +77,14 @@
   .nav-items {
     position: unset;
     flex-direction: row;
-    align-items: center;
+    align-items: center;    
+    transform: translateX(0);
   }
   
-  .nav-items a {
+  .nav-items > li {
+    list-style-type: none;
+  }
+  .nav-items > li > a {
     position: relative;
     margin: 15px;
     color: white;
